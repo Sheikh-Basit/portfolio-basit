@@ -4,6 +4,7 @@ import AboutMe from './AboutMe'
 import Projects from './Projects'
 import ContactMe from './ContactMe'
 import ParticleBackground from '../BackgroundParticles/ParticleBackground'
+import Services from './Services'
 
 
 const MainPage = () => {
@@ -15,6 +16,7 @@ const MainPage = () => {
       <HeroSection/>
       <div className="main relative w-full h-full">
         <AboutMe/>
+        <Services/>
         <Projects/>
         <ContactMe/>
       </div>

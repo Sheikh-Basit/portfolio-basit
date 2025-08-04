@@ -95,15 +95,15 @@ const AboutMe = () => {
   ]
   return (
     <section id='AboutMe'>
-      <div className='container mx-auto px-3 py-14 lg:px-14 '>
+      <div className='container mx-auto px-3 pt-14 lg:px-14 '>
         <h2 className='text-center text-4xl sm:text-5xl text-gray-900 dark:text-white font-bold'>About Me</h2>
         <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 mt-12">
 
           {/* My Info */}
           <div className="MyInfo p-4 bg-white shadow-2xl dark:bg-neutral-900 rounded w-full md:w-1/2 text-center md:text-left">
-            <h3 className="text-xl text-gray-400 dark:text-cyan-500 font-bold mb-5">Who I Am</h3>
+            <h3 className="text-xl text-gray-400 dark:text-cyan-400 font-bold mb-5">Who I Am</h3>
             <h4 className="text-2xl text-gray-900 dark:text-white font-bold pb-5">My name is Sheikh Abdul Basit and I am a full stack developer.</h4>
-            <p className='text-black dark:text-gray-400 pb-6'>I have been working on web designing and web development for 4 years. Constantly updating the technologies I already master, but also looking to learn new technologies to enrich my skills and improve my good practices as a developer.</p>
+            <p className='text-black dark:text-gray-400 mb-6 leading-8'>I have been working on web designing and web development for 4 years. Constantly updating the technologies I already master, but also looking to learn new technologies to enrich my skills and improve my good practices as a developer.</p>
             <ul className='text-black dark:text-gray-400'>
               <li className='pb-6'>
                 <strong className='text-gray-900 dark:text-white'>Age: </strong>23
@@ -121,7 +121,7 @@ const AboutMe = () => {
             <div className="more-info flex justify-center items-center md:items-start md:flex-col gap-x-2 md:gap-y-3 mb-2">
               <a href='#' className="relative rounded border-2 border-black text-black hover:text-white before:content-[''] before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-neutral-900 dark:before:bg-white hover:before:w-full before:transition-all before:duration-500 dark:hover:text-black dark:border-white dark:text-white px-1 sm:px-3 py-2 w-40 md:w-2/3 flex"><span className='z-10 text-sm flex items-center justify-center w-full'><SlCloudDownload className='text-xl me-2 sm:me-5' /> Download CV</span></a>
 
-              <a href='#' className="rounded border-2 border-cyan-600 bg-cyan-500 hover:bg-cyan-600 dark:text-neutral-900 text-white flex items-center justify-center px-1 sm:px-3 py-2 w-40 md:w-2/3 h-full">Read More <FaCircleArrowRight className='text-xl ms-2 sm:ms-5' /></a>
+              <a href='#' className="rounded border-2 border-cyan-500 bg-cyan-400 hover:bg-cyan-500 dark:text-neutral-900 text-white flex items-center justify-center px-1 sm:px-3 py-2 w-40 md:w-2/3 h-full">Read More <FaCircleArrowRight className='text-xl ms-2 sm:ms-5' /></a>
 
             </div>
           </div>
@@ -129,7 +129,7 @@ const AboutMe = () => {
 
           {/* My Skills */}
           <div className="MyInfo p-4 bg-white shadow-2xl dark:bg-neutral-900 rounded w-full md:w-1/2 text-center">
-            <h3 className="text-xl text-gray-400 dark:text-cyan-500 font-bold mb-5">Skills</h3>
+            <h3 className="text-xl text-gray-400 dark:text-cyan-400 font-bold mb-5">Skills</h3>
 
             {/* Front End */}
             <h4 className="text-2xl text-gray-900 dark:text-white font-bold pb-5">Front-End</h4>

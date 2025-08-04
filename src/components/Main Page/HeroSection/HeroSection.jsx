@@ -16,14 +16,14 @@ const HeroSection = () => {
     
           <div className="container mx-auto h-full p-3 sm:px-14 pt-50 flex flex-col items-center">
             <p data-aos="fade-up" className="text-2xl sm:text-4xl text-white font-bold">Hello</p>
-            <h1 data-aos="fade-up" className='text-3xl sm:text-5xl text-cyan-500 font-bold uppercase my-2'>I am Abdul Basit</h1>
+            <h1 data-aos="fade-up" className='text-3xl sm:text-5xl text-cyan-400 font-bold uppercase my-2'>I am Abdul Basit</h1>
             <p data-aos="fade-up" className="text-2xl sm:text-4xl text-white font-bold">Full Stack Developer</p>
     
             {/* Social Icons */}
             <div className="flex space-x-5 mt-3">
               {/* LinkedIN icon */}
               <a href="https://www.linkedin.com/in/sheikh-abdul-basit-82b594302/" target='_blank' data-aos="fade-up" className="group">
-                <div className="icon flex items-center p-2 rounded-full bg-cyan-500 transition-all duration-500">
+                <div className="icon flex items-center p-2 rounded-full bg-cyan-400 transition-all duration-500">
                   <span className='border border-neutral-800 rounded-full p-1'>
                     <FaLinkedinIn />
                   </span>
@@ -35,7 +35,7 @@ const HeroSection = () => {
     
                {/* Github icon */}
               <a href="https://github.com/Sheikh-Basit" target='_blank' data-aos="fade-up" className="group">
-                <div className="icon flex items-center p-2 rounded-full bg-cyan-500 transition-all duration-500">
+                <div className="icon flex items-center p-2 rounded-full bg-cyan-400 transition-all duration-500">
                   <span className='border border-neutral-800 rounded-full p-1'>
                     <TbBrandGithubFilled />
                   </span>
@@ -47,7 +47,7 @@ const HeroSection = () => {
     
               {/* Facebook icon */}
               <a href="https://www.facebook.com/profile.php?id=61578323800693" target='_blank' data-aos="fade-up" className="group">
-                <div className="icon flex items-center p-2 rounded-full bg-cyan-500 transition-all duration-500">
+                <div className="icon flex items-center p-2 rounded-full bg-cyan-400 transition-all duration-500">
                   <span className='border border-neutral-800 rounded-full p-1'>
                     <FaFacebookF />
                   </span>
@@ -59,7 +59,7 @@ const HeroSection = () => {
     
               {/* Whatsapp icon */}
               <a href="https://wa.me/+923135739864" target='_blank' data-aos="fade-up" className="group">
-                <div className="icon flex items-center p-2 rounded-full bg-cyan-500 transition-all duration-500">
+                <div className="icon flex items-center p-2 rounded-full bg-cyan-400 transition-all duration-500">
                     <FaWhatsapp className='text-2xl'/>
                   {/* <span className='border border-neutral-800 rounded-full p-1'>
                   </span> */}
