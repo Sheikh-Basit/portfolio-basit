@@ -8,16 +8,16 @@ import './HeroSection.css';
 
 const HeroSection = () => {
   return (
-    <section className=' w-full h-screen relative border border-amber-500'>
+    <section className='w-full h-screen relative'>
           {/* Background Particles */}
           <div className="absolute top-0 left-0 w-full h-full -z-10">
             <ParticlesHeroSecBg/>
           </div>
     
-          <div className="container mx-auto p-3 px-14 pt-50 flex flex-col items-center">
-            <p data-aos="fade-up" className="text-4xl text-white font-bold">Hello</p>
-            <h1 data-aos="fade-up" className='text-5xl text-cyan-500 font-bold uppercase my-2'>I am Abdul Basit</h1>
-            <p data-aos="fade-up" className="text-4xl text-white font-bold">Full Stack Developer</p>
+          <div className="container mx-auto h-full p-3 sm:px-14 pt-50 flex flex-col items-center">
+            <p data-aos="fade-up" className="text-2xl sm:text-4xl text-white font-bold">Hello</p>
+            <h1 data-aos="fade-up" className='text-3xl sm:text-5xl text-cyan-500 font-bold uppercase my-2'>I am Abdul Basit</h1>
+            <p data-aos="fade-up" className="text-2xl sm:text-4xl text-white font-bold">Full Stack Developer</p>
     
             {/* Social Icons */}
             <div className="flex space-x-5 mt-3">

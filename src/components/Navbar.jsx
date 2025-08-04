@@ -48,7 +48,7 @@ const Navbar = () => {
 
 
                     {/* Nav-menu */}
-                    <ul className={`flex gap-x-5 order-2 absolute top-full left-0 flex-col bg-whitle dark:bg-neutral-950 w-full border-t-1 border-neutral-200 dark:border-neutral-800 -translate-x-full sm:translate-0 ${isMobileMenuOpen ? 'translate-x-0' : ""} transition-all  sm:pb-0 sm:border-0 sm:relative sm:flex-row sm:justify-center`}>
+                    <ul className={`flex gap-x-5 order-2 absolute top-full left-0 flex-col bg-white dark:bg-neutral-950 w-full border-t-1 border-neutral-200 dark:border-neutral-800 -translate-x-full sm:translate-0 ${isMobileMenuOpen ? 'translate-x-0' : ""} transition-all  sm:pb-0 sm:border-0 sm:relative sm:flex-row sm:justify-center`}>
                         <li className="relative text-gray-800 dark:text-white px-3 sm:px-0 hover:bg-neutral-200 dark:hover:bg-neutral-900 sm:hover:bg-transparent sm:dark:hover:bg-transparent">
                             <a href="#" className="py-3 block font-bold sm:font-semibold before:content=[''] before:absolute before:left-0 before:bottom-0 before:bg-cyan-500 before:w-0 before:h-0.5 before:transition-all before:duration-300 hover:before:w-full" >Home</a>
                         </li>
