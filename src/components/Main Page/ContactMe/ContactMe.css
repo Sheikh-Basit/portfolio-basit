@@ -1,0 +1,59 @@
+
+
+/* ✅ Corrected nth-child targeting */
+.icons a:nth-child(1) .layer span,
+.icons a:nth-child(1) .name {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+.icons a:nth-child(2) .layer span,
+.icons a:nth-child(2) .name {
+  color: #4fc35b;
+  border-color: #4fc35b;
+}
+
+.icons a:nth-child(3) .layer span,
+.icons a:nth-child(3) .name {
+  color: #e1306c;
+  border-color: #e1306c;
+}
+
+.icons a:nth-child(4) .layer span,
+.icons a:nth-child(4) .name {
+  color: #1da1f2;
+  border-color: #1da1f2;
+}
+
+.icons a:nth-child(5) .layer span,
+.icons a:nth-child(5) .name {
+  color: #2867b2;
+  border-color: #2867b2;
+}
+
+.icons a:nth-child(6) .layer span,
+.icons a:nth-child(6) .name {
+  color: #000;
+  border-color: #000;
+}
+
+/* Hover glow */
+.icons a:hover:nth-child(1) .layer span {
+  box-shadow: -1px 1px 3px #ff0000;
+}
+.icons a:hover:nth-child(2) .layer span {
+  box-shadow: -1px 1px 3px #4fc35b;
+}
+.icons a:hover:nth-child(3) .layer span {
+  box-shadow: -1px 1px 3px #e1306c;
+}
+.icons a:hover:nth-child(4) .layer span {
+  box-shadow: -1px 1px 3px #1da1f2;
+}
+.icons a:hover:nth-child(5) .layer span {
+  box-shadow: -1px 1px 3px #2867b2;
+}
+.icons a:hover:nth-child(6) .layer span {
+  box-shadow: -1px 1px 3px #000;
+}
+

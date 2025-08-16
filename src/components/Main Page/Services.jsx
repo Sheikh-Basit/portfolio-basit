@@ -50,8 +50,8 @@ const Services = () => {
                     })}
                 </div>
 
-                <div className="text-center flex justify-center items-center mt-5">
-                    <a href='#' className="rounded border-2 border-cyan-500 bg-cyan-400 hover:bg-cyan-500 dark:text-neutral-900 text-white flex items-center justify-center px-1 sm:px-3 py-2 w-40 h-full">Read More <FaCircleArrowRight className='text-xl ms-2 sm:ms-5' /></a>
+                <div className="text-center flex justify-center items-center mt-10">
+                    <a href='#' className="animated-btn">Read More<FaCircleArrowRight className='text-xl ms-5' /></a>
                 </div>
 
             </div>

@@ -1,6 +1,10 @@
 import React from 'react'
 import { SlCloudDownload } from "react-icons/sl";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import download from '../../assets/download.gif';
+
+// CV
+import CV from '../../assets/CV.pdf'
 
 // Images
 import html5 from '../../assets/html5.svg'
@@ -94,7 +98,7 @@ const AboutMe = () => {
     },
   ]
   return (
-    <section id='AboutMe'>
+    <section id='aboutme'>
       <div className='container mx-auto px-3 pt-14 lg:px-14 '>
         <h2 className='text-center text-4xl sm:text-5xl text-gray-900 dark:text-white font-bold'>About Me</h2>
         <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 mt-12">
@@ -119,16 +123,17 @@ const AboutMe = () => {
               </li>
             </ul>
             <div className="more-info flex justify-center items-center md:items-start md:flex-col gap-x-2 md:gap-y-3 mb-2">
-              <a href='#' className="relative rounded border-2 border-black text-black hover:text-white before:content-[''] before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-neutral-900 dark:before:bg-white hover:before:w-full before:transition-all before:duration-500 dark:hover:text-black dark:border-white dark:text-white px-1 sm:px-3 py-2 w-40 md:w-2/3 flex"><span className='z-10 text-sm flex items-center justify-center w-full'><SlCloudDownload className='text-xl me-2 sm:me-5' /> Download CV</span></a>
 
-              <a href='#' className="rounded border-2 border-cyan-500 bg-cyan-400 hover:bg-cyan-500 dark:text-neutral-900 text-white flex items-center justify-center px-1 sm:px-3 py-2 w-40 md:w-2/3 h-full">Read More <FaCircleArrowRight className='text-xl ms-2 sm:ms-5' /></a>
+              <a href={CV} className="rounded bg-black border-2 border-black text-white dark:border-white dark:text-black dark:bg-white p-1 sm:px-3 w-50 text-sm flex items-center justify-center" download='Sheikh-Abdul-Basit.pdf'><img src={download} width={30} alt="download" className='me-2 sm:me-3'/> Download CV</a>
+
+              <a href='#' className="animated-btn">Read More<FaCircleArrowRight className='text-xl ms-5' /></a>
 
             </div>
           </div>
 
 
           {/* My Skills */}
-          <div className="MyInfo p-4 bg-white shadow-2xl dark:bg-neutral-900 rounded w-full md:w-1/2 text-center">
+          <div className="MyInfo p-4 bg-white shadow-2xl dark:bg-neutral-900 rounded w-full md:w-1/2 text-center md:text-left">
             <h3 className="text-xl text-gray-400 dark:text-cyan-400 font-bold mb-5">Skills</h3>
 
             {/* Front End */}

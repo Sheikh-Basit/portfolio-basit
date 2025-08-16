@@ -1,17 +1,28 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-@layer base{
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-    
-    html{
-        scroll-behavior: smooth;
-    }
-    
-    body{
-        font-family: "Poppins", sans-serif;
-    }
+@layer base {
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
 }
-    
+
+@layer components{
+
+  .animated-btn {
+    @apply relative rounded border-2 border-cyan-400 text-cyan-400 hover:text-white before:content-[''] before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-cyan-400 dark:hover:text-black hover:before:w-full before:transition-all before:duration-500 before:-z-10 z-0 px-1 sm:px-3 py-2 w-50 flex items-center justify-center text-sm;
+  }
+  .swiper-pagination-bullet{
+    @apply !bg-cyan-400
+  }
+}
+
+
 

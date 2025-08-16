@@ -8,7 +8,7 @@ import './HeroSection.css';
 
 const HeroSection = () => {
   return (
-    <section className='w-full h-screen relative'>
+    <section id='home' className='w-full h-screen relative'>
           {/* Background Particles */}
           <div className="absolute top-0 left-0 w-full h-full -z-10">
             <ParticlesHeroSecBg/>
