@@ -1,11 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
+import {Link} from 'react-scroll'
 import { IoSunny } from "react-icons/io5";
 import { IoIosMoon } from "react-icons/io";
+import {FaWhatsapp } from "react-icons/fa";
+import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isLightDark, setIsLightDark] = useState(false);
+    const [isVisibleScrollBtn, setIsVisibleScrollBtn] = useState(false);
+
+  useEffect(() => {
+    const scrollToTop = () => {
+      if (window.scrollY > 500) {
+        setIsVisibleScrollBtn(true);
+      } else {
+        setIsVisibleScrollBtn(false);
+      }
+    };
+
+    window.addEventListener("scroll", scrollToTop);
+    return () => window.removeEventListener("scroll", scrollToTop);
+  }, []);
 
     const toggleMobileMenu = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -50,19 +67,19 @@ const Navbar = () => {
                     {/* Nav-menu */}
                     <ul className={`flex gap-x-5 order-2 absolute top-full left-0 flex-col bg-white dark:bg-neutral-950 w-full border-t-1 border-neutral-200 dark:border-neutral-800 -translate-x-full sm:translate-0 ${isMobileMenuOpen ? 'translate-x-0' : ""} transition-all  sm:pb-0 sm:border-0 sm:relative sm:flex-row sm:justify-center`}>
                         <li className="relative text-gray-800 dark:text-white px-3 sm:px-0 hover:bg-neutral-200 dark:hover:bg-neutral-900 sm:hover:bg-transparent sm:dark:hover:bg-transparent">
-                            <a href="#home" className="py-3 block font-bold sm:font-semibold before:content=[''] before:absolute before:left-0 before:bottom-0 before:bg-cyan-500 before:w-0 before:h-0.5 before:transition-all before:duration-300 hover:before:w-full" >Home</a>
+                            <Link to="home" smooth={true} duration={500} className="py-3 block font-bold sm:font-semibold before:content=[''] before:absolute before:left-0 before:bottom-0 before:bg-cyan-500 before:w-0 before:h-0.5 before:transition-all before:duration-300 hover:before:w-full cursor-pointer" >Home</Link>
                         </li>
                         <li className="relative text-gray-800 dark:text-white px-3 sm:px-0 hover:bg-neutral-200 dark:hover:bg-neutral-900 sm:hover:bg-transparent sm:dark:hover:bg-transparent">
-                            <a href="#aboutme" className="py-3 block font-bold sm:font-semibold before:content=[''] before:absolute before:left-0 before:bottom-0 before:bg-cyan-500 before:w-0 before:h-0.5 before:transition-all before:duration-300 hover:before:w-full" >About Me</a>
+                            <Link to="aboutme" smooth={true} duration={500} className="py-3 block font-bold sm:font-semibold before:content=[''] before:absolute before:left-0 before:bottom-0 before:bg-cyan-500 before:w-0 before:h-0.5 before:transition-all before:duration-300 hover:before:w-full cursor-pointer" >About Me</Link>
                         </li>
                         <li className="relative text-gray-800 dark:text-white px-3 sm:px-0 hover:bg-neutral-200 dark:hover:bg-neutral-900 sm:hover:bg-transparent sm:dark:hover:bg-transparent">
-                            <a href="#services" className="py-3 block font-bold sm:font-semibold before:content=[''] before:absolute before:left-0 before:bottom-0 before:bg-cyan-500 before:w-0 before:h-0.5 before:transition-all before:duration-300 hover:before:w-full" >Services</a>
+                            <Link to="services" smooth={true} duration={500} className="py-3 block font-bold sm:font-semibold before:content=[''] before:absolute before:left-0 before:bottom-0 before:bg-cyan-500 before:w-0 before:h-0.5 before:transition-all before:duration-300 hover:before:w-full cursor-pointer" >Services</Link>
                         </li>
                         <li className="relative text-gray-800 dark:text-white px-3 sm:px-0 hover:bg-neutral-200 dark:hover:bg-neutral-900 sm:hover:bg-transparent sm:dark:hover:bg-transparent">
-                            <a href="#projects" className="py-3 block font-bold sm:font-semibold before:content=[''] before:absolute before:left-0 before:bottom-0 before:bg-cyan-500 before:w-0 before:h-0.5 before:transition-all before:duration-300 hover:before:w-full" >Projects</a>
+                            <Link to="projects" smooth={true} duration={500} className="py-3 block font-bold sm:font-semibold before:content=[''] before:absolute before:left-0 before:bottom-0 before:bg-cyan-500 before:w-0 before:h-0.5 before:transition-all before:duration-300 hover:before:w-full cursor-pointer" >Projects</Link>
                         </li>
                         <li className="relative text-gray-800 dark:text-white px-3 sm:px-0 hover:bg-neutral-200 dark:hover:bg-neutral-900 sm:hover:bg-transparent sm:dark:hover:bg-transparent">
-                            <a href="#contactme" className="py-3 block font-bold sm:font-semibold before:content=[''] before:absolute before:left-0 before:bottom-0 before:bg-cyan-500 before:w-0 before:h-0.5 before:transition-all before:duration-300 hover:before:w-full">Contact Me</a>
+                            <Link to="contactMe" smooth={true} duration={500} className="py-3 block font-bold sm:font-semibold before:content=[''] before:absolute before:left-0 before:bottom-0 before:bg-cyan-500 before:w-0 before:h-0.5 before:transition-all before:duration-300 hover:before:w-full cursor-pointer">Contact Me</Link>
                         </li>
                     </ul>
 
@@ -81,6 +98,11 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
+
+            {isVisibleScrollBtn && (
+                <Link to="home" smooth={true} duration={500} className="cursor-pointer z-10 fixed rounded-full right-5 bottom-24 w-12 h-12 dark:bg-white bg-black text-white dark:text-black flex justify-center items-center text-3xl"><MdKeyboardDoubleArrowUp /></Link>
+            )}
+            <a href="https://wa.me/+923135739864" target='_blank' className="cursor-pointer z-10 fixed rounded-full right-5 bottom-8 w-12 h-12 bg-green-400 text-white flex justify-center items-center text-3xl"><FaWhatsapp/></a>
         </>
     );
 };
