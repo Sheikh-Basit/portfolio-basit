@@ -9,7 +9,8 @@ const ContactMe = () => {
   const socialIcons =[
     {
       icon:FaEnvelope,
-      href:"https://mail.google.com/mail/?view=cm&fs=1&to=shabdulbasit64@gmail.com",
+      href:"mailto:shabdulbasit64@gmail.com",
+      // href:"https://mail.google.com/mail/?view=cm&fs=1&to=shabdulbasit64@gmail.com",
       name:"Gmail"
     },
     {
@@ -19,12 +20,12 @@ const ContactMe = () => {
     },
     {
       icon:FaInstagram,
-      href:"https://www.instagram.com/abdulbasit/",
+      href:"https://www.instagram.com/sheikhabdul975/",
       name:"Instagram"
     },
     {
       icon:FaTelegram,
-      href:"mailto:estebancarrizo619@gmail.com",
+      href:"https://t.me/SheikhAbdulBasit01",
       name:"Telegram"
     },
     {

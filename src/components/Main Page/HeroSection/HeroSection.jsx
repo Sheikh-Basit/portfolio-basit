@@ -5,6 +5,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import ParticlesHeroSecBg from '../../../components/BackgroundParticles/ParticlesHeroSecBg';
 import './HeroSection.css';
+import { Link } from 'react-scroll';
 
 const HeroSection = () => {
   return (
@@ -15,12 +16,12 @@ const HeroSection = () => {
           </div>
     
           <div className="container mx-auto h-full p-3 sm:px-14 pt-50 flex flex-col items-center">
-            <p data-aos="fade-up" className="text-2xl sm:text-4xl text-white font-bold">Hello</p>
-            <h1 data-aos="fade-up" className='text-3xl sm:text-5xl text-cyan-400 font-bold uppercase my-2'>I am Abdul Basit</h1>
+            <p data-aos="fade-up" className="text-2xl sm:text-4xl text-white font-bold">Hello, I'am</p>
+            <h1 data-aos="fade-up" className='text-3xl sm:text-5xl text-cyan-400 font-bold uppercase my-2'>Sheikh Abdul Basit</h1>
             <p data-aos="fade-up" className="text-2xl sm:text-4xl text-white font-bold">Full Stack Developer</p>
     
             {/* Social Icons */}
-            <div className="flex space-x-5 mt-3">
+            <div className="flex space-x-5 mt-5">
               {/* LinkedIN icon */}
               <a href="https://www.linkedin.com/in/sheikh-abdul-basit-82b594302/" target='_blank' data-aos="fade-up" className="group">
                 <div className="icon flex items-center p-2 rounded-full bg-cyan-400 transition-all duration-500">
@@ -73,10 +74,10 @@ const HeroSection = () => {
           </div>
 
           {/* Scroll Down Button */}
-          <a href="#AboutMe">
+          <Link to="aboutme">
           <div className="scroll-down absolute bottom-5 left-1/2 -translate-x-1/2 w-8 h-13 border-2 border-white rounded-4xl cursor-pointer">
           </div>
-          </a>
+          </Link>
     
         </section>
   )

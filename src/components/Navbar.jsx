@@ -65,7 +65,7 @@ const Navbar = () => {
 
 
                     {/* Nav-menu */}
-                    <ul className={`flex gap-x-5 order-2 absolute top-full left-0 flex-col bg-white dark:bg-neutral-950 w-full border-t-1 border-neutral-200 dark:border-neutral-800 -translate-x-full sm:translate-0 ${isMobileMenuOpen ? 'translate-x-0' : ""} transition-all  sm:pb-0 sm:border-0 sm:relative sm:flex-row sm:justify-center`}>
+                    <ul className={`flex gap-x-5 order-2 absolute top-full left-0 flex-col bg-white dark:bg-neutral-950 w-full sm:w-auto border-t-1 border-neutral-200 dark:border-neutral-800 -translate-x-full sm:translate-0 ${isMobileMenuOpen ? 'translate-x-0' : ""} transition-all  sm:pb-0 sm:border-0 sm:relative sm:flex-row sm:justify-center`}>
                         <li className="relative text-gray-800 dark:text-white px-3 sm:px-0 hover:bg-neutral-200 dark:hover:bg-neutral-900 sm:hover:bg-transparent sm:dark:hover:bg-transparent">
                             <Link to="home" smooth={true} duration={500} className="py-3 block font-bold sm:font-semibold before:content=[''] before:absolute before:left-0 before:bottom-0 before:bg-cyan-500 before:w-0 before:h-0.5 before:transition-all before:duration-300 hover:before:w-full cursor-pointer" >Home</Link>
                         </li>
@@ -100,9 +100,12 @@ const Navbar = () => {
             </nav>
 
             {isVisibleScrollBtn && (
-                <Link to="home" smooth={true} duration={500} className="cursor-pointer z-10 fixed rounded-full right-5 bottom-24 w-12 h-12 dark:bg-white bg-black text-white dark:text-black flex justify-center items-center text-3xl"><MdKeyboardDoubleArrowUp /></Link>
+            <div className="z-10 fixed bottom-7 right-5">
+                <Link to="home" smooth={true} duration={500} className="cursor-pointer mb-3 rounded-full w-12 h-12 dark:bg-white bg-neutral-900 text-white dark:text-neutral-900 flex justify-center items-center text-3xl"><MdKeyboardDoubleArrowUp /></Link>
+            <a href="https://wa.me/+923135739864" target='_blank' className="cursor-pointer rounded-full w-12 h-12 bg-green-400 text-white flex justify-center items-center text-3xl"><FaWhatsapp/></a>
+            </div>
             )}
-            <a href="https://wa.me/+923135739864" target='_blank' className="cursor-pointer z-10 fixed rounded-full right-5 bottom-8 w-12 h-12 bg-green-400 text-white flex justify-center items-center text-3xl"><FaWhatsapp/></a>
+
         </>
     );
 };
