@@ -115,10 +115,7 @@ const AboutMe = () => {
               My name is Sheikh Abdul Basit and I am a full stack developer.
             </h4>
             <p className="text-black dark:text-gray-400 mb-6 leading-8">
-              I have been working on web designing and web development for 4
-              years. Constantly updating the technologies I already master, but
-              also looking to learn new technologies to enrich my skills and
-              improve my good practices as a developer.
+              Passionate about creating responsive and dynamic web applications, I continuously refine my existing skills while exploring new technologies to deliver better solutions and maintain best practices.
             </p>
             <ul className="text-black dark:text-gray-400">
               <li className="pb-6">

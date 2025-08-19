@@ -1,37 +1,10 @@
 import React from "react";
-import { FaLaptopCode } from "react-icons/fa6";
-import { FaChartLine } from "react-icons/fa6";
-import { FaScrewdriverWrench } from "react-icons/fa6";
-import { FaTachometerAlt } from "react-icons/fa";
 import { FaCircleArrowRight } from "react-icons/fa6";
 
+// import the services object
+import services from '../../Pages/Services/ServiceObj'
+
 const Services = () => {
-    const services = [
-        {
-            icon: FaLaptopCode,
-            title: "Web Development",
-            desc: "Creation of well-structured web pages, good responsive design, attractive color palette, with interactions that give the user satisfaction when browsing the website.",
-            
-        },
-        {
-            icon: FaChartLine,
-            title: "Digital Marketing",
-            desc: "Prepare a strategy and objectives for the promotion of the brand provided by the client, using the internet or other platforms to promote products and services of the brand in question.",
-            
-        },
-        {
-            icon: FaScrewdriverWrench,
-            title: "Web Maintenance",
-            desc: "Complete maintenance of web pages to detect and solve errors, update content whether text, photos, web design elements, add new functions, etc.",
-            
-        },
-        {
-            icon: FaTachometerAlt,
-            title: "Website Optimization",
-            desc: "Complete optimization of your web page, improving loading speed, using optimized images, a good URL, to give a better experience to users who visit the website",
-            
-        },
-    ];
     return (
         <section id="services">
             <div className="container mx-auto px-3 pt-14 lg:px-14">
