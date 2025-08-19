@@ -1,7 +1,0 @@
-    .slick-list {
-      margin: 0 -5px; /* Adjusts the overall container to account for padding */
-    }
-    .slick-slide > div {
-      padding: 0 5px; /* Adds 5px of padding on both sides of the content within each slide */
-    }
-   

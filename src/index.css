@@ -16,8 +16,8 @@
 
 @layer components{
 
-  .animated-btn {
-    @apply relative rounded border-2 border-cyan-400 text-cyan-400 hover:text-white before:content-[''] before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-cyan-400 dark:hover:text-black hover:before:w-full before:transition-all before:duration-500 before:-z-10 z-0 px-1 sm:px-3 py-2 w-50 flex items-center justify-center text-sm;
+  .Read-more {
+    @apply relative rounded border-2 border-cyan-400 text-cyan-400 font-bold hover:text-white before:content-[''] before:absolute before:top-0 before:left-0 before:h-full before:w-0 before:bg-cyan-400 dark:hover:text-black hover:before:w-full before:transition-all before:duration-500 before:-z-10 z-0 px-1 sm:px-3 py-2 w-50 flex items-center justify-center text-sm;
   }
   .swiper-pagination-bullet{
     @apply !bg-cyan-400

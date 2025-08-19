@@ -11,17 +11,17 @@ import "swiper/css/scrollbar";
 import { Pagination, Autoplay } from "swiper/modules";
 
 /* Images (import manually or dynamically) */
-import img1 from "../../../assets/img/proyecto-app-18.png";
-import img2 from "../../../assets/img/proyecto-14.jpg";
-import img3 from "../../../assets/img/proyecto-app-17.png";
-import img4 from "../../../assets/img/proyecto-7.jpg";
-import img5 from "../../../assets/img/proyecto-6.jpg";
-import img6 from "../../../assets/img/proyecto-12.jpg";
-import img7 from "../../../assets/img/proyecto-5.jpg";
-import img8 from "../../../assets/img/proyecto-8.jpg";
-import img9 from "../../../assets/img/proyecto-10.jpg";
-import img10 from "../../../assets/img/proyecto-9.jpg";
-import img11 from "../../../assets/img/proyecto-11.jpg";
+import img1 from "../../assets/img/proyecto-app-18.png";
+import img2 from "../../assets/img/proyecto-14.jpg";
+import img3 from "../../assets/img/proyecto-app-17.png";
+import img4 from "../../assets/img/proyecto-7.jpg";
+import img5 from "../../assets/img/proyecto-6.jpg";
+import img6 from "../../assets/img/proyecto-12.jpg";
+import img7 from "../../assets/img/proyecto-5.jpg";
+import img8 from "../../assets/img/proyecto-8.jpg";
+import img9 from "../../assets/img/proyecto-10.jpg";
+import img10 from "../../assets/img/proyecto-9.jpg";
+import img11 from "../../assets/img/proyecto-11.jpg";
 
 /* Icons */
 import { FaCircleArrowRight } from "react-icons/fa6";
@@ -123,11 +123,12 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="container mx-auto px-3 pt-14 lg:px-14">
-        <h2 className="text-center text-4xl sm:text-5xl text-neutral-900 dark:text-white font-bold mb-8">
+        <h2 data-aos="fade-up" data-aos-delay="300" className="text-center text-4xl sm:text-5xl text-neutral-900 dark:text-white font-bold mb-8">
           Projects
         </h2>
 
         <Swiper
+          data-aos="flip-right" data-aos-delay="600"
           modules={[Pagination, Autoplay]}
           spaceBetween={30}
           loop={true}
@@ -184,7 +185,7 @@ const Projects = () => {
           <div />
         </Swiper>
         <div className="text-center flex justify-center items-center mt-5">
-          <a href="#" className="animated-btn">
+          <a data-aos="fade-up" data-aos-delay="600" href="#" className="Read-more">
             Read More
             <FaCircleArrowRight className="text-xl ms-5" />
           </a>

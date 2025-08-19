@@ -10,42 +10,47 @@ const ContactMe = () => {
     {
       icon:FaEnvelope,
       href:"mailto:shabdulbasit64@gmail.com",
-      // href:"https://mail.google.com/mail/?view=cm&fs=1&to=shabdulbasit64@gmail.com",
-      name:"Gmail"
+      name:"Gmail",
+      delay:"600" //it's just for animation, not a part of content
     },
     {
       icon:FaWhatsapp,
       href:"https://wa.me/+923135739864",
-      name:"Whatsapp"
+      name:"Whatsapp",
+      delay:"800" //it's just for animation, not a part of content
     },
     {
       icon:FaInstagram,
       href:"https://www.instagram.com/sheikhabdul975/",
-      name:"Instagram"
+      name:"Instagram",
+      delay:"1000" //it's just for animation, not a part of content
     },
     {
       icon:FaTelegram,
       href:"https://t.me/SheikhAbdulBasit01",
-      name:"Telegram"
+      name:"Telegram",
+      delay:"1200" //it's just for animation, not a part of content
     },
     {
       icon:FaLinkedinIn,
       href:"https://www.linkedin.com/in/sheikh-abdul-basit-82b594302/",
-      name:"LinkedIn"
+      name:"LinkedIn",
+      delay:"1400" //it's just for animation, not a part of content
     },
     {
       icon:FaGithub,
       href:"https://github.com/Sheikh-Basit",
-      name:"Github"
+      name:"Github",
+      delay:"1600" //it's just for animation, not a part of content
     },
   ]
   return (
     <section id="contactMe">
       <div className="container mx-auto px-3 pt-14 lg:px-14">
-        <h2 className="text-center text-4xl sm:text-5xl text-neutral-900 dark:text-white font-bold mb-8">
+        <h2 data-aos="fade-up" data-aos-delay="300" className="text-center text-4xl sm:text-5xl text-neutral-900 dark:text-white font-bold mb-8">
           Contact Me
         </h2>
-        <h3 className="text-gray-700 dark:text-white text-2xl">
+        <h3 data-aos="fade-left" data-aos-delay="600" className="text-gray-700 dark:text-white text-2xl text-center sm:text-left">
           Contact me by: 
           <TypeAnimation
             sequence={[
@@ -72,7 +77,7 @@ const ContactMe = () => {
           {socialIcons.map((icons, index)=>{
             return (
 
-              <a href={icons.href} key={index} target="_blank" rel={icons.name} data-aos="zoom-in" className="group text-white block relative my-12 mx-8 dark:last:[&_.layer_span]:!border-white dark:last:[&_.layer_span]:!text-white dark:last:[&_.name]:!text-white">
+              <a href={icons.href} key={index} target="_blank" rel={icons.name} data-aos="fade-up" data-aos-delay={icons.delay} className="group text-white block relative mx-5 my-8 sm:my-12 sm:mx-8 dark:last:[&_.layer_span]:!border-white dark:last:[&_.layer_span]:!text-white dark:last:[&_.name]:!text-white">
 
             <div className="layer relative w-16 h-16 transform duration-300 group-hover:rotate-[-35deg] group-hover:skew-x-[20deg]">
               <span className="absolute top-0 left-0 h-full w-full border-2 border-white rounded-md transition duration-300 group-hover:opacity-20 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 last:dark:text-while "></span>

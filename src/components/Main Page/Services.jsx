@@ -11,33 +11,37 @@ const Services = () => {
             icon: FaLaptopCode,
             title: "Web Development",
             desc: "Creation of well-structured web pages, good responsive design, attractive color palette, with interactions that give the user satisfaction when browsing the website.",
+            
         },
         {
             icon: FaChartLine,
             title: "Digital Marketing",
             desc: "Prepare a strategy and objectives for the promotion of the brand provided by the client, using the internet or other platforms to promote products and services of the brand in question.",
+            
         },
         {
             icon: FaScrewdriverWrench,
             title: "Web Maintenance",
             desc: "Complete maintenance of web pages to detect and solve errors, update content whether text, photos, web design elements, add new functions, etc.",
+            
         },
         {
             icon: FaTachometerAlt,
             title: "Website Optimization",
             desc: "Complete optimization of your web page, improving loading speed, using optimized images, a good URL, to give a better experience to users who visit the website",
+            
         },
     ];
     return (
         <section id="services">
             <div className="container mx-auto px-3 pt-14 lg:px-14">
-                <h2 className="text-center text-4xl sm:text-5xl text-neutral-900 dark:text-white font-bold">
+                <h2 data-aos="fade-up" data-aos-delay="300" className="text-center text-4xl sm:text-5xl text-neutral-900 dark:text-white font-bold">
                     Services
                 </h2>
                 <div className="grid sm:grid-cols-2 gap-5 items-stretch place-items-center mt-12">
                     {services.map((service, index) => {
                         return (
-                            <div key={index} className="text-center group p-4 bg-white dark:bg-neutral-900 shadow-xl rounded hover:bg-neutral-700 dark:hover:bg-neutral-900 dark:border-b-10 dark:hover:border-b-cyan-400 dark:border-b-neutral-900 dark:inset-shadow-sm dark:hover:inset-shadow-cyan-400">
+                            <div key={index} data-aos="zoom-in" data-aos-delay="600" className="text-center group p-4 bg-white dark:bg-neutral-900 shadow-xl rounded hover:bg-neutral-700 dark:hover:bg-neutral-900 dark:border-b-10 dark:hover:border-b-cyan-400 dark:border-b-neutral-900 dark:inset-shadow-sm dark:hover:inset-shadow-cyan-400">
                                 <service.icon className="inline-block text-neutral-900 dark:text-gray-400 text-5xl mb-5 group-hover:text-cyan-400" />
                                 <h3 className="text-xl text-gray-400 group-hover:text-white dark:text-white font-bold mb-5">
                                     {service.title}
@@ -51,7 +55,7 @@ const Services = () => {
                 </div>
 
                 <div className="text-center flex justify-center items-center mt-10">
-                    <a href='#' className="animated-btn">Read More<FaCircleArrowRight className='text-xl ms-5' /></a>
+                    <a data-aos="fade-up" data-aos-delay="300" href='#' className="Read-more">Read More<FaCircleArrowRight className='text-xl ms-5' /></a>
                 </div>
 
             </div>

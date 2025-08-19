@@ -102,12 +102,12 @@ const AboutMe = () => {
   return (
     <section id="aboutme">
       <div className="container mx-auto px-3 pt-14 lg:px-14 ">
-        <h2 className="text-center text-4xl sm:text-5xl text-gray-900 dark:text-white font-bold">
+        <h2 data-aos="fade-up" data-aos-delay="100" className="text-center text-4xl sm:text-5xl text-gray-900 dark:text-white font-bold">
           About Me
         </h2>
         <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 mt-12">
           {/* My Info */}
-          <div className="MyInfo p-4 bg-white shadow-2xl dark:bg-neutral-900 rounded w-full md:w-1/2 text-center md:text-left">
+          <div data-aos="fade-right" data-aos-delay="300" className="MyInfo p-4 bg-white shadow-2xl dark:bg-neutral-900 rounded w-full md:w-1/2 text-center md:text-left">
             <h3 className="text-xl text-gray-400 dark:text-cyan-400 font-bold mb-5">
               Who I Am
             </h3>
@@ -146,7 +146,7 @@ const AboutMe = () => {
             <div className="more-info flex justify-center items-center md:items-start md:flex-col gap-x-2 md:gap-y-3 mb-2">
               <a
                 href={CV}
-                className="rounded bg-black border-2 border-black text-white dark:border-white dark:text-black dark:bg-white p-1 sm:px-3 w-50 text-sm flex items-center justify-center"
+                className="rounded bg-black border-2 border-black text-white dark:border-white dark:text-black dark:bg-white p-1 sm:px-3 w-50 text-sm flex items-center justify-center font-semibold"
                 download="Sheikh-Abdul-Basit.pdf"
               >
                 <img
@@ -154,11 +154,11 @@ const AboutMe = () => {
                   width={30}
                   alt="download"
                   className="me-2 sm:me-3"
-                />{" "}
+                />
                 Download CV
               </a>
 
-              <a href="#" className="animated-btn">
+              <a href="#" className="Read-more">
                 Read More
                 <FaCircleArrowRight className="text-xl ms-5" />
               </a>
@@ -166,7 +166,7 @@ const AboutMe = () => {
           </div>
 
           {/* My Skills */}
-          <div className="MyInfo p-4 bg-white shadow-2xl dark:bg-neutral-900 rounded w-full md:w-1/2 text-center md:text-left">
+          <div data-aos="fade-left" data-aos-delay="600" className="MyInfo p-4 bg-white shadow-2xl dark:bg-neutral-900 rounded w-full md:w-1/2 text-center md:text-left">
             <h3 className="text-xl text-gray-400 dark:text-cyan-400 font-bold mb-5">
               Skills
             </h3>
