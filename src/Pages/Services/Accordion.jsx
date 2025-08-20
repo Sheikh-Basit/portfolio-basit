@@ -5,25 +5,45 @@ const Accordion = () => {
 
   const items = [
     {
-      title: "What is React?",
-      content: "React is a JavaScript library for building user interfaces.",
+      title: "What do I need to provide before starting the project?",
+      content: "To begin your project, please share your requirements, design references, domain/hosting details all content (test, images) . If content isn't ready, I'll use professional demo text/Images. Also provide social media links and contact info for your site's contact page.",
     },
     {
-      title: "What is TailwindCSS?",
+      title: "Do you both frontend and backend development?",
       content:
-        "TailwindCSS is a utility-first CSS framework for rapidly building custom designs.",
+        "Yes, I provide Full Stack Development ( React frontend + Node.js/Express.js or PHP backend + MongoDB/MySQL database ) as a complete package.",
     },
     {
-      title: "What is MERN Stack?",
+      title: "Will the website/app be mobile friendly?",
       content:
-        "MERN stands for MongoDB, Express, React, and Node.js, a stack for full-stack development.",
+        "Absolutely! All projects are built with responsive design to work perfectly on mobile, tablet and desktop",
+    },
+    {
+      title: "Do you use any frameworks?",
+      content:
+        "I use Tailwind CSS and Bootstrap (latest version) depending on your preference or project needs.",
+    },
+    {
+      title: "Will the code be SEO-friendly?",
+      content:
+        "Absolutely. I follow best practices to ensure clean, semantic and SEO-optimized code.",
+    },
+    {
+      title: "Do you work with existing codebases?",
+      content:
+        "Yes, I can debug, optimize and add new features to your existing MERN Stack projects. Share your code/repo link for review.",
+    },
+    {
+      title: "What about authentication & security?",
+      content:
+        "All  MERN apps includes JWT/ OAuth authentication and security best practices ( e.g input validation ).",
     },
   ];
 
   return (
-    <div className="w-full max-w-xl mx-auto bg-white dark:bg-neutral-900 rounded-lg shadow-md mt-10">
+    <div data-aos="fade-up" data-aos-delay="500" className="w-full max-w-xl mx-auto bg-white dark:bg-neutral-900 rounded-lg shadow-md mt-10">
       {items.map((item, index) => (
-        <div key={index} className="border-b border-gray-800">
+        <div key={index} className="border-b border-gray-800 last:border-0">
           <button
             className="w-full flex justify-between items-center py-3 px-4 text-left text-white font-semibold hover:text-cyan-400"
             onClick={() => setOpenIndex(openIndex === index ? null : index)}

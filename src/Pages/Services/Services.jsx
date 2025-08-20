@@ -89,7 +89,7 @@ const Services = () => {
                 </div>
             </div>
 
-            <div className="FAQs">
+            <div className="FAQs mb-8">
                 <h2 data-aos="fade-up" data-aos-delay="300" className="text-center text-4xl sm:text-5xl text-neutral-900 dark:text-white font-bold">
                     Frequent Questions
                 </h2>
