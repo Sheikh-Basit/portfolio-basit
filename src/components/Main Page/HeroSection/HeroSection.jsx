@@ -17,18 +17,18 @@ const HeroSection = () => {
     
           <div className="container mx-auto h-full p-3 sm:px-14 pt-50 flex flex-col items-center">
             <p data-aos="fade-up" data-aos-delay="600"  className="text-2xl sm:text-4xl text-white font-bold">Hello, I'am</p>
-            <h1 data-aos="fade-up" data-aos-delay="800" className='text-3xl sm:text-5xl text-cyan-400 font-bold uppercase my-2'>Sheikh Abdul Basit</h1>
+            <h1 data-aos="fade-up" data-aos-delay="800" className='text-3xl sm:text-5xl text-violet-400 font-bold uppercase my-2'>Sheikh Abdul Basit</h1>
             <p data-aos="fade-up" data-aos-delay="1000" className="text-2xl sm:text-4xl text-white font-bold">Full Stack Developer</p>
     
             {/* Social Icons */}
             <div className="flex space-x-5 mt-5">
               {/* LinkedIN icon */}
               <a href="https://www.linkedin.com/in/sheikh-abdul-basit-82b594302/" target='_blank' data-aos="fade-up" data-aos-delay="1200" className="group">
-                <div className="icon flex items-center p-2 rounded-full bg-cyan-400 transition-all duration-500">
-                  <span className='border border-neutral-800 rounded-full p-1'>
+                <div className="icon flex items-center p-2 rounded-full bg-violet-400 transition-all duration-500">
+                  <span className='group-hover:border group-hover:border-violet-50 text-violet-950 rounded-full p-1'>
                     <FaLinkedinIn />
                   </span>
-                  <span className='opacity-0 max-w-0 overflow-hidden group-hover:ms-2 group-hover:opacity-100 group-hover:max-w-xs transition-all duration-500 whitespace-nowrap text-black'>
+                  <span className='text-violet-50 opacity-0 max-w-0 overflow-hidden group-hover:ms-2 group-hover:opacity-100 group-hover:max-w-xs transition-all duration-500 whitespace-nowrap '>
                     LinkedIn
                   </span>
                 </div>
@@ -36,11 +36,11 @@ const HeroSection = () => {
     
                {/* Github icon */}
               <a href="https://github.com/Sheikh-Basit" target='_blank' data-aos="fade-up" data-aos-delay="1400" className="group">
-                <div className="icon flex items-center p-2 rounded-full bg-cyan-400 transition-all duration-500">
-                  <span className='border border-neutral-800 rounded-full p-1'>
+                <div className="icon flex items-center p-2 rounded-full bg-violet-400 transition-all duration-500">
+                  <span className='group-hover:border group-hover:border-violet-50 text-violet-950 rounded-full p-1'>
                     <TbBrandGithubFilled />
                   </span>
-                  <span className='opacity-0 max-w-0 overflow-hidden group-hover:ms-2 group-hover:opacity-100 group-hover:max-w-xs transition-all duration-500 whitespace-nowrap text-black'>
+                  <span className='text-violet-50 opacity-0 max-w-0 overflow-hidden group-hover:ms-2 group-hover:opacity-100 group-hover:max-w-xs transition-all duration-500 whitespace-nowrap'>
                     Github
                   </span>
                 </div>
@@ -48,11 +48,11 @@ const HeroSection = () => {
     
               {/* Facebook icon */}
               <a href="https://www.facebook.com/profile.php?id=61578323800693" target='_blank' data-aos="fade-up" data-aos-delay="1600" className="group">
-                <div className="icon flex items-center p-2 rounded-full bg-cyan-400 transition-all duration-500">
-                  <span className='border border-neutral-800 rounded-full p-1'>
+                <div className="icon flex items-center p-2 rounded-full bg-violet-400 transition-all duration-500">
+                  <span className='group-hover:border group-hover:border-violet-50 text-violet-950 rounded-full p-1'>
                     <FaFacebookF />
                   </span>
-                  <span className='opacity-0 max-w-0 overflow-hidden group-hover:ms-2 group-hover:opacity-100 group-hover:max-w-xs transition-all duration-500 whitespace-nowrap text-black'>
+                  <span className='text-violet-50 opacity-0 max-w-0 overflow-hidden group-hover:ms-2 group-hover:opacity-100 group-hover:max-w-xs transition-all duration-500 whitespace-nowrap'>
                     Facebook
                   </span>
                 </div>
@@ -60,11 +60,11 @@ const HeroSection = () => {
     
               {/* Whatsapp icon */}
               <a href="https://wa.me/+923135739864" target='_blank' data-aos="fade-up" data-aos-delay="1800" className="group">
-                <div className="icon flex items-center p-2 rounded-full bg-cyan-400 transition-all duration-500">
-                    <FaWhatsapp className='text-2xl'/>
-                  {/* <span className='border border-neutral-800 rounded-full p-1'>
+                <div className="icon flex items-center p-2 rounded-full bg-violet-400 transition-all duration-500">
+                    <FaWhatsapp className='text-2xl text-violet-950'/>
+                  {/* <span className='group-hover:border group-hover:border-violet-50 text-violet-950 rounded-full p-1'>
                   </span> */}
-                  <span className='opacity-0 max-w-0 overflow-hidden group-hover:ms-2 group-hover:opacity-100 group-hover:max-w-xs transition-all duration-500 whitespace-nowrap text-black'>
+                  <span className='text-violet-50 opacity-0 max-w-0 overflow-hidden group-hover:ms-2 group-hover:opacity-100 group-hover:max-w-xs transition-all duration-500 whitespace-nowrap'>
                     Whatsapp
                   </span>
                 </div>

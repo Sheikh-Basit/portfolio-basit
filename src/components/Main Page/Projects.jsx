@@ -123,7 +123,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <div className="container mx-auto px-3 pt-14 lg:px-14">
-        <h2 data-aos="fade-up" data-aos-delay="300" className="text-center text-4xl sm:text-5xl text-neutral-900 dark:text-white font-bold mb-8">
+        <h2 data-aos="fade-up" data-aos-delay="300" className="text-center text-4xl sm:text-5xl text-violet-950 dark:text-violet-50 font-bold mb-8">
           Projects
         </h2>
 
@@ -156,15 +156,15 @@ const Projects = () => {
               <img src={p.img} alt={p.title} className={`transition-all duration-300 ${activeIndex === i ? "scale-100" : "scale-75"}`} />
               
                 <div className={`content text-center my-4 mb-14 transition-all duration-300 ${activeIndex === i ? "scale-100" : "scale-0"}`}>
-                  <h3 className="text-neutral-900 dark:text-white text-3xl font-bold mb-3">
+                  <h3 className="text-violet-500 dark:text-violet-400 text-3xl font-bold mb-3">
                     {p.title}
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-400 mb-3">{p.desc}</p>
-                  <p className="text-gray-700 dark:text-gray-400 mb-3">{p.tech}</p>
+                  <p className="text-neutral-900 dark:text-violet-200 mb-3">{p.desc}</p>
+                  <p className="text-neutral-900 dark:text-violet-200 mb-3">{p.tech}</p>
                   <div className="flex items-center justify-center gap-x-2">
                     <a
                       href={p.demo}
-                      className="bg-cyan-400 font-bold border-2 border-cyan-400 text-black rounded px-3 py-1"
+                      className="bg-violet-500 font-bold border-2 border-violet-500 text-violet-50 rounded px-3 py-1"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -172,7 +172,7 @@ const Projects = () => {
                     </a>
                     <a
                       href={p.repo}
-                      className="border-2 border-black dark:border-white px-3 py-1 rounded text-black dark:text-white font-bold hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black transition-all"
+                      className="border-2 border-neutral-900 dark:border-violet-50 px-3 py-1 rounded text-neutral-900 dark:text-violet-50 font-bold hover:bg-neutral-900 dark:hover:bg-violet-50 hover:text-violet-50 dark:hover:text-neutral-900 transition-all"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

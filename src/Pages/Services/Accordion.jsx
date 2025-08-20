@@ -41,11 +41,11 @@ const Accordion = () => {
   ];
 
   return (
-    <div data-aos="fade-up" data-aos-delay="500" className="w-full max-w-xl mx-auto bg-white dark:bg-neutral-900 rounded-lg shadow-md mt-10">
+    <div data-aos="fade-up" data-aos-delay="500" className="w-full max-w-xl mx-auto bg-violet-200 dark:bg-neutral-900 rounded-lg shadow-md mt-10">
       {items.map((item, index) => (
-        <div key={index} className="border-b border-gray-800 last:border-0">
+        <div key={index} className="border-b border-violet-300 dark:border-neutral-700 last:border-0">
           <button
-            className="w-full flex justify-between items-center py-3 px-4 text-left text-white font-semibold hover:text-cyan-400"
+            className="w-full flex justify-between items-center py-3 px-4 text-left text-violet-500 dark:text-violet-400 font-semibold"
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
           >
             {item.title}
@@ -56,7 +56,7 @@ const Accordion = () => {
               openIndex === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
             }`}
           >
-            <div className="px-4 pb-3 text-gray-600 text-sm">{item.content}</div>
+            <div className="px-4 pb-3 text-violet-900 dark:text-violet-200 text-sm">{item.content}</div>
           </div>
         </div>
       ))}

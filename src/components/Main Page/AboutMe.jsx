@@ -102,39 +102,39 @@ const AboutMe = () => {
   return (
     <section id="aboutme">
       <div className="container mx-auto px-3 pt-14 lg:px-14 ">
-        <h2 data-aos="fade-up" data-aos-delay="100" className="text-center text-4xl sm:text-5xl text-gray-900 dark:text-white font-bold">
+        <h2 data-aos="fade-up" data-aos-delay="100" className="text-center text-4xl sm:text-5xl text-violet-950 dark:text-violet-50 font-bold">
           About Me
         </h2>
         <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 mt-12">
           {/* My Info */}
-          <div data-aos="fade-right" data-aos-delay="300" className="MyInfo p-4 bg-white shadow-2xl dark:bg-neutral-900 rounded w-full md:w-1/2 text-center md:text-left">
-            <h3 className="text-xl text-gray-400 dark:text-cyan-400 font-bold mb-5">
+          <div data-aos="fade-right" data-aos-delay="300" className="MyInfo p-4 bg-violet-200 shadow-2xl dark:bg-neutral-900 rounded w-full md:w-1/2 text-center md:text-left">
+            <h3 className="text-xl text-violet-500 dark:text-violet-400 font-bold mb-5">
               Who I Am
             </h3>
-            <h4 className="text-2xl text-gray-900 dark:text-white font-bold pb-5">
+            <h4 className="text-2xl text-violet-950 dark:text-violet-50 font-bold pb-5">
               My name is Sheikh Abdul Basit and I am a full stack developer.
             </h4>
-            <p className="text-black dark:text-gray-400 mb-6 leading-8">
+            <p className="text-neutral-900 dark:text-neutral-400 mb-6 leading-8">
               Passionate about creating responsive and dynamic web applications, I continuously refine my existing skills while exploring new technologies to deliver better solutions and maintain best practices.
             </p>
-            <ul className="text-black dark:text-gray-400">
+            <ul className="text-neutral-900 dark:text-neutral-400">
               <li className="pb-6">
-                <strong className="text-gray-900 dark:text-white">Age: </strong>{year-2002}
+                <strong className="text-violet-950 dark:text-violet-50">Age: </strong>{year-2002}
               </li>
               <li className="pb-6">
-                <strong className="text-gray-900 dark:text-white">
+                <strong className="text-violet-950 dark:text-violet-50">
                   Hobbies:{" "}
                 </strong>
                 Programming, Cricket and Mobile Games
               </li>
               <li className="pb-6">
-                <strong className="text-gray-900 dark:text-white">
+                <strong className="text-violet-950 dark:text-violet-50">
                   Email:{" "}
                 </strong>
                 shabdulbasit64@gmail.com
               </li>
               <li className="pb-6">
-                <strong className="text-gray-900 dark:text-white">
+                <strong className="text-violet-950 dark:text-violet-50">
                   From:{" "}
                 </strong>
                 Taxila, Pakistan
@@ -143,7 +143,7 @@ const AboutMe = () => {
             <div className="more-info flex justify-center items-center md:items-start md:flex-col gap-x-2 md:gap-y-3 mb-2">
               <a
                 href={CV}
-                className="rounded bg-black border-2 border-black text-white dark:border-white dark:text-black dark:bg-white p-1 sm:px-3 w-50 text-sm flex items-center justify-center font-semibold"
+                className="rounded bg-violet-500 hover:bg-violet-400 hover:border-violet-400 border-2 border-violet-500 text-violet-50 dark:border-violet-50 dark:text-violet-900 dark:bg-violet-50 p-1 sm:px-3 w-50 text-sm flex items-center justify-center font-semibold"
                 download="Sheikh-Abdul-Basit.pdf"
               >
                 <img
@@ -163,13 +163,13 @@ const AboutMe = () => {
           </div>
 
           {/* My Skills */}
-          <div data-aos="fade-left" data-aos-delay="600" className="MyInfo p-4 bg-white shadow-2xl dark:bg-neutral-900 rounded w-full md:w-1/2 text-center md:text-left">
-            <h3 className="text-xl text-gray-400 dark:text-cyan-400 font-bold mb-5">
+          <div data-aos="fade-left" data-aos-delay="600" className="MyInfo p-4 bg-violet-200 shadow-2xl dark:bg-neutral-900 rounded w-full md:w-1/2 text-center md:text-left">
+            <h3 className="text-xl text-violet-500 dark:text-violet-400 font-bold mb-5">
               Skills
             </h3>
 
             {/* Front End */}
-            <h4 className="text-2xl text-gray-900 dark:text-white font-bold pb-5">
+            <h4 className="text-2xl text-violet-950 dark:text-violet-50 font-bold pb-5">
               Front-End
             </h4>
             {/* Front end Icons */}
@@ -182,7 +182,7 @@ const AboutMe = () => {
                       alt={item.alt}
                       className="w-14 sm:w-20 grayscale-0 dark:hover:grayscale-0 dark:grayscale-100 m-3"
                     />
-                    <div className="absolute bottom-full left-1/2 mb-2 w-max -translate-x-1/2 translate-y-15 opacity-0 group-hover:opacity-100 group-hover:translate-y-3  transition-all duration-500 bg-black dark:bg-white text-white dark:text-black text-sm px-3 py-1 rounded shadow-lg z-10 font-semibold">
+                    <div className="absolute bottom-full left-1/2 mb-2 w-max -translate-x-1/2 translate-y-15 opacity-0 group-hover:opacity-100 group-hover:translate-y-3  transition-all duration-500 bg-violet-500 dark:bg-violet-50 text-violet-50 dark:text-violet-500 text-sm px-3 py-1 rounded shadow-lg z-10 font-semibold">
                       {item.alt}
                     </div>
                   </div>
@@ -191,7 +191,7 @@ const AboutMe = () => {
             </div>
 
             {/* Back End */}
-            <h4 className="text-2xl text-gray-900 dark:text-white font-bold pb-5">
+            <h4 className="text-2xl text-violet-950 dark:text-violet-50 font-bold pb-5">
               Back-End
             </h4>
             {/* Back end Icons */}
@@ -204,7 +204,7 @@ const AboutMe = () => {
                       alt={item.alt}
                       className="w-14 sm:w-20 grayscale-0 dark:hover:grayscale-0 dark:grayscale-100 m-3"
                     />
-                    <div className="absolute bottom-full left-1/2 mb-2 w-max -translate-x-1/2 translate-y-15 opacity-0 group-hover:opacity-100 group-hover:translate-y-3  transition-all duration-500 bg-black dark:bg-white text-white dark:text-black text-sm px-3 py-1 rounded shadow-lg z-10 font-semibold">
+                    <div className="absolute bottom-full left-1/2 mb-2 w-max -translate-x-1/2 translate-y-15 opacity-0 group-hover:opacity-100 group-hover:translate-y-3  transition-all duration-500 bg-violet-500 dark:bg-violet-50 text-violet-50 dark:text-violet-500 text-sm px-3 py-1 rounded shadow-lg z-10 font-semibold">
                       {item.alt}
                     </div>
                   </div>
@@ -213,7 +213,7 @@ const AboutMe = () => {
             </div>
 
             {/* Tools */}
-            <h4 className="text-2xl text-gray-900 dark:text-white font-bold pb-5">
+            <h4 className="text-2xl text-violet-950 dark:text-violet-50 font-bold pb-5">
               Tools
             </h4>
             {/* Tools Icons */}
@@ -226,7 +226,7 @@ const AboutMe = () => {
                       alt={item.alt}
                       className="w-14 sm:w-20 grayscale-0 dark:hover:grayscale-0 dark:grayscale-100 m-3"
                     />
-                    <div className="absolute bottom-full left-1/2 mb-2 w-max -translate-x-1/2 translate-y-15 opacity-0 group-hover:opacity-100 group-hover:translate-y-3  transition-all duration-500 bg-black dark:bg-white text-white dark:text-black text-sm px-3 py-1 rounded shadow-lg z-10 font-semibold">
+                    <div className="absolute bottom-full left-1/2 mb-2 w-max -translate-x-1/2 translate-y-15 opacity-0 group-hover:opacity-100 group-hover:translate-y-3  transition-all duration-500 bg-violet-500 dark:bg-violet-50 text-violet-50 dark:text-violet-500 text-sm px-3 py-1 rounded shadow-lg z-10 font-semibold">
                       {item.alt}
                     </div>
                   </div>

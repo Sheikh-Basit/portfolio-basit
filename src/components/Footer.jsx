@@ -6,6 +6,7 @@ import {
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
+import ScrollToTop from "./ScrollToTop/ScrollToTop";
 
 const Footer = () => {
   return (
@@ -30,6 +31,22 @@ const Footer = () => {
           </a>
         </div>
       </div>
+
+      {/* fixed buttons */}
+
+      <div className="z-10 fixed bottom-7 right-5">
+          {/* Scroll to top */}
+          <ScrollToTop/>
+
+          {/* Whatsapp icon */}
+          <a
+            href="https://wa.me/+923135739864"
+            target="_blank"
+            className="cursor-pointer rounded-full w-12 h-12 bg-green-400 text-violet-50 flex justify-center items-center text-3xl"
+          >
+            <FaWhatsapp />
+          </a>
+        </div>
     </footer>
   );
 };

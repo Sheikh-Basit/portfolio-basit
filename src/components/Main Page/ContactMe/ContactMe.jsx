@@ -47,10 +47,10 @@ const ContactMe = () => {
   return (
     <section id="contactMe">
       <div className="container mx-auto px-3 pt-14 lg:px-14">
-        <h2 data-aos="fade-up" data-aos-delay="300" className="text-center text-4xl sm:text-5xl text-neutral-900 dark:text-white font-bold mb-8">
+        <h2 data-aos="fade-up" data-aos-delay="300" className="text-center text-4xl sm:text-5xl text-violet-950 dark:text-violet-50 font-bold mb-8">
           Contact Me
         </h2>
-        <h3 data-aos="fade-left" data-aos-delay="600" className="text-gray-700 dark:text-white text-2xl text-center sm:text-left">
+        <h3 data-aos="fade-left" data-aos-delay="600" className="text-neutral-700 dark:text-violet-50 text-2xl text-center sm:text-left">
           Contact me by: 
           <TypeAnimation
             sequence={[
@@ -67,7 +67,7 @@ const ContactMe = () => {
             wrapper="b"
             cursor={true}
             repeat={Infinity}
-            className="text-black dark:text-cyan-400 ms-2"
+            className="text-violet-500 ms-2"
 
           />
         </h3>
@@ -77,14 +77,14 @@ const ContactMe = () => {
           {socialIcons.map((icons, index)=>{
             return (
 
-              <a href={icons.href} key={index} target="_blank" rel={icons.name} data-aos="fade-up" data-aos-delay={icons.delay} className="group text-white block relative mx-5 my-8 sm:my-12 sm:mx-8 dark:last:[&_.layer_span]:!border-white dark:last:[&_.layer_span]:!text-white dark:last:[&_.name]:!text-white">
+              <a href={icons.href} key={index} target="_blank" rel={icons.name} data-aos="fade-up" data-aos-delay={icons.delay} className="group text-violet-50 block relative mx-5 my-8 sm:my-12 sm:mx-8 dark:last:[&_.layer_span]:!border-violet-50 dark:last:[&_.layer_span]:!text-violet-50 dark:last:[&_.name]:!text-violet-50">
 
             <div className="layer relative w-16 h-16 transform duration-300 group-hover:rotate-[-35deg] group-hover:skew-x-[20deg]">
-              <span className="absolute top-0 left-0 h-full w-full border-2 border-white rounded-md transition duration-300 group-hover:opacity-20 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 last:dark:text-while "></span>
-              <span className="absolute top-0 left-0 h-full w-full border-2 border-white rounded-md transition duration-300 group-hover:opacity-40 group-hover:translate-x-1.5 group-hover:-translate-y-1.5 last:dark:text-while"></span>
-              <span className="absolute top-0 left-0 h-full w-full border-2 border-white rounded-md transition duration-300 group-hover:opacity-60 group-hover:translate-x-2.5 group-hover:-translate-y-2.5 last:dark:text-while"></span>
-              <span className="absolute top-0 left-0 h-full w-full border-2 border-white rounded-md transition duration-300 group-hover:opacity-80 group-hover:translate-x-3.5 group-hover:-translate-y-3.5 last:dark:text-while"></span>
-              <span className="fab absolute top-0 left-0 h-full w-full border-2 border-white rounded-md transition duration-300 flex items-center justify-center text-4xl group-hover:translate-x-4.5 group-hover:-translate-y-4.5 last:dark:text-while last:dark:border-white"><icons.icon /></span>
+              <span className="absolute top-0 left-0 h-full w-full border-2 border-violet-50 rounded-md transition duration-300 group-hover:opacity-20 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 last:dark:text-while "></span>
+              <span className="absolute top-0 left-0 h-full w-full border-2 border-violet-50 rounded-md transition duration-300 group-hover:opacity-40 group-hover:translate-x-1.5 group-hover:-translate-y-1.5 last:dark:text-while"></span>
+              <span className="absolute top-0 left-0 h-full w-full border-2 border-violet-50 rounded-md transition duration-300 group-hover:opacity-60 group-hover:translate-x-2.5 group-hover:-translate-y-2.5 last:dark:text-while"></span>
+              <span className="absolute top-0 left-0 h-full w-full border-2 border-violet-50 rounded-md transition duration-300 group-hover:opacity-80 group-hover:translate-x-3.5 group-hover:-translate-y-3.5 last:dark:text-while"></span>
+              <span className="fab absolute top-0 left-0 h-full w-full border-2 border-violet-50 rounded-md transition duration-300 flex items-center justify-center text-4xl group-hover:translate-x-4.5 group-hover:-translate-y-4.5 last:dark:text-while last:dark:border-violet-50"><icons.icon /></span>
             </div>
             <div className="name absolute left-1/2 -bottom-1.5 opacity-0 text-xl font-semibold -translate-x-1/2 transition-all duration-300 group-hover:-bottom-11 group-hover:opacity-100">
               {icons.name}
