@@ -1,12 +1,12 @@
 import React from "react";
 import { SlCloudDownload } from "react-icons/sl";
 import { FaCircleArrowRight } from "react-icons/fa6";
-import download from "../../assets/download.gif";
+import {NavLink} from 'react-router-dom'
 
 // CV
 import CV from "../../assets/CV.pdf";
 
-// Images
+// Skill Images 
 import html5 from "../../assets/html5.svg";
 import css3 from "../../assets/css3.svg";
 import bootstrap from "../../assets/bootstrap.svg";
@@ -114,10 +114,10 @@ const AboutMe = () => {
             <h4 className="text-2xl text-violet-950 dark:text-violet-50 font-bold pb-5">
               My name is Sheikh Abdul Basit and I am a full stack developer.
             </h4>
-            <p className="text-neutral-900 dark:text-neutral-400 mb-6 leading-8">
+            <p className="text-violet-500 dark:text-neutral-400 mb-6 leading-8">
               Passionate about creating responsive and dynamic web applications, I continuously refine my existing skills while exploring new technologies to deliver better solutions and maintain best practices.
             </p>
-            <ul className="text-neutral-900 dark:text-neutral-400">
+            <ul className="text-violet-500 dark:text-neutral-400">
               <li className="pb-6">
                 <strong className="text-violet-950 dark:text-violet-50">Age: </strong>{year-2002}
               </li>
@@ -143,22 +143,17 @@ const AboutMe = () => {
             <div className="more-info flex justify-center items-center md:items-start md:flex-col gap-x-2 md:gap-y-3 mb-2">
               <a
                 href={CV}
-                className="rounded bg-violet-500 hover:bg-violet-400 hover:border-violet-400 border-2 border-violet-500 text-violet-50 dark:border-violet-50 dark:text-violet-900 dark:bg-violet-50 p-1 sm:px-3 w-50 text-sm flex items-center justify-center font-semibold"
+                className="rounded bg-violet-500 hover:bg-violet-400 hover:border-violet-600 border-2 border-violet-500 text-violet-50 hover:text-violet-900 transition-all dark:border-violet-50 dark:text-violet-900 dark:bg-violet-50 px-1 sm:px-3 py-2 w-50 text-sm flex items-center justify-center font-semibold"
                 download="Sheikh-Abdul-Basit.pdf"
-              >
-                <img
-                  src={download}
-                  width={30}
-                  alt="download"
-                  className="me-2 sm:me-3"
-                />
+              ><SlCloudDownload className="text-xl me-3"/>
+                
                 Download CV
               </a>
 
-              <a href="#" className="Read-more">
+              <NavLink to="/aboutme" className="Read-more">
                 Read More
                 <FaCircleArrowRight className="text-xl ms-5" />
-              </a>
+              </NavLink>
             </div>
           </div>
 

@@ -41,9 +41,9 @@ const Accordion = () => {
   ];
 
   return (
-    <div data-aos="fade-up" data-aos-delay="500" className="w-full max-w-xl mx-auto bg-violet-200 dark:bg-neutral-900 rounded-lg shadow-md mt-10">
+    <div className="w-full max-w-xl mx-auto bg-violet-200 dark:bg-neutral-900 rounded-lg shadow-md mt-10">
       {items.map((item, index) => (
-        <div key={index} className="border-b border-violet-300 dark:border-neutral-700 last:border-0">
+        <div key={index} data-aos={index % 2 === 0 ? "fade-left" : "fade-right"} data-aos-delay="500" className=" border-b border-violet-300 dark:border-neutral-700 last:border-0">
           <button
             className="w-full flex justify-between items-center py-3 px-4 text-left text-violet-500 dark:text-violet-400 font-semibold"
             onClick={() => setOpenIndex(openIndex === index ? null : index)}

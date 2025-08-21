@@ -10,7 +10,7 @@ import ScrollToTop from "./ScrollToTop/ScrollToTop";
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-neutral-950 dark:text-white border-t border-gray-200 dark:border-0">
+    <footer className="bg-violet-200 dark:bg-neutral-950 dark:text-violet-50 dark:shadow-[0_-4px_10px_rgba(255,255,255,0.03)] text-violet-950 dark:border-0">
       <div className="container mx-auto flex sm:flex-row flex-col space-y-8 sm:space-y-0 justify-between items-center py-8 p-3 lg:px-14">
         <div className="copyright text-center sm:text-left">
           <p>Page Created by Sheikh Abdul Basit</p>
