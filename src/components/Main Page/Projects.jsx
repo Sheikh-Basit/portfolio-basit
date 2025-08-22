@@ -171,7 +171,7 @@ const Projects = () => {
           <div />
         </Swiper>
         <div className="text-center flex justify-center items-center mt-5">
-          <NavLink to="/project" className="Read-more" data-aos="fade-up" data-aos-delay="600">
+          <NavLink to="/projects" className="Read-more" data-aos="fade-up" data-aos-delay="600">
                 Read More
                 <FaCircleArrowRight className="text-xl ms-5" />
               </NavLink>
