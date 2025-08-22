@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import Services from './Pages/Services/Services';
 import RouterScrollTop from './components/ScrollToTop/RouterScrollTop';
 import AboutMePage from './Pages/AboutMePage';
+import Projects from './Pages/Projects';
 
 
 // import ParticlesHeroSecBg from './components/BackgroundParticles/ParticlesHeroSecBg';
@@ -31,7 +32,7 @@ function App() {
         <Route path="/" element={<MainPage/>} />
         <Route path="/aboutme" element={<AboutMePage/>} />
         <Route path="/services" element={<Services />} />
-        {/* <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/project" element={<Projects />} />
       </Routes>
     </Router>
     <Footer/>

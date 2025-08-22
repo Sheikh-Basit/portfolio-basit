@@ -11,9 +11,10 @@ import "swiper/css/scrollbar";
 import { Pagination, Autoplay } from "swiper/modules";
 
 /* Images (import manually or dynamically) */
-import img1 from "../../assets/img/proyecto-app-18.png";
-import img2 from "../../assets/img/proyecto-14.jpg";
-import img3 from "../../assets/img/proyecto-app-17.png";
+import img1 from "../../assets/Projects/img1.png";
+import img2 from "../../assets/Projects/img2.png";
+import img3 from "../../assets/Projects/img3.jpg";
+// import img3 from "../../assets/img/proyecto-app-17.png";
 import img4 from "../../assets/img/proyecto-7.jpg";
 import img5 from "../../assets/img/proyecto-6.jpg";
 import img6 from "../../assets/img/proyecto-12.jpg";
@@ -25,6 +26,7 @@ import img11 from "../../assets/img/proyecto-11.jpg";
 
 /* Icons */
 import { FaCircleArrowRight } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
 
 
 const Projects = () => {
@@ -32,27 +34,27 @@ const Projects = () => {
   const projects = [
     {
       img: img1,
-      title: "CoinPlus",
-      desc: "Trading platform for cryptocurrencies",
-      tech: "React - CSS - Redux - Bootstrap - TypeScript - Solidity - NodeJS - MongoDB",
-      demo: "https://coin-plus.vercel.app/",
-      repo: "https://github.com/Nahuel61920/CoinPlus",
+      title: "Digital-Resume",
+      desc: "Portfolio Template",
+      tech: "HTML5 - CSS - JAVASCRIPT",
+      demo: "https://simpleeportfolio.netlify.app/",
+      repo: "https://github.com/Sheikh-Basit/Digital-Resume-main",
     },
     {
       img: img2,
+      title: "Megaone Acrothemes",
+      desc: "Digital Agency",
+      tech: "HTML5 - CSS - JAVASCRIPT",
+      demo: "https://megaone-acrothemes.netlify.app/",
+      repo: "https://github.com/Sheikh-Basit/Website---Megaone-Acrothemes",
+    },
+    {
+      img: img3,
       title: "Justice",
       desc: "Lawyers website",
       tech: "HTML5 - CSS - JavaScript - jQuery - Bootstrap",
       demo: "https://nahuel61920.github.io/Justice/",
       repo: "https://github.com/Nahuel61920/Justice",
-    },
-    {
-      img: img3,
-      title: "PI Dogs",
-      desc: "Individual Project",
-      tech: "React - CSS - Redux - NodeJS - ExpressJS - Sequelize - PostgreSQL",
-      demo: "https://pi-dogs-main-ashy.vercel.app/",
-      repo: "https://github.com/Nahuel61920/PI-DOGS-MAIN",
     },
     {
       img: img4,
@@ -63,28 +65,12 @@ const Projects = () => {
       repo: "https://github.com/Nahuel61920/Power-Engine",
     },
     {
-      img: img5,
-      title: "Spider-Man fan page",
-      desc: "Fan page Spider-Man",
-      tech: "HTML5 - CSS - JavaScript - Bootstrap",
-      demo: "https://nahuel61920.github.io/Spider-Man/",
-      repo: "https://github.com/Nahuel61920/Spider-Man",
-    },
-    {
       img: img6,
       title: "EveryRunning",
       desc: "Website shoes",
       tech: "HTML5 - CSS - JavaScript - Bootstrap",
       demo: "https://nahuel61920.github.io/EveryRunning/",
       repo: "https://github.com/Nahuel61920/EveryRunning",
-    },
-    {
-      img: img7,
-      title: "Premier Food",
-      desc: "Fast food",
-      tech: "HTML5 - CSS - JavaScript - Sass",
-      demo: "https://nahuel61920.github.io/PremierFood/",
-      repo: "https://github.com/Nahuel61920/PremierFood",
     },
     {
       img: img8,
@@ -185,10 +171,10 @@ const Projects = () => {
           <div />
         </Swiper>
         <div className="text-center flex justify-center items-center mt-5">
-          <a data-aos="fade-up" data-aos-delay="600" href="#" className="Read-more">
-            Read More
-            <FaCircleArrowRight className="text-xl ms-5" />
-          </a>
+          <NavLink to="/project" className="Read-more" data-aos="fade-up" data-aos-delay="600">
+                Read More
+                <FaCircleArrowRight className="text-xl ms-5" />
+              </NavLink>
         </div>
       </div>
     </section>
