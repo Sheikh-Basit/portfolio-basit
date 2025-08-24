@@ -21,7 +21,7 @@ const ContactMe = () => {
     },
     {
       icon:FaInstagram,
-      href:"https://www.instagram.com/sheikhabdul975/",
+      href:"https://www.instagram.com/sheikhbasit864/",
       name:"Instagram",
       delay:"1000" //it's just for animation, not a part of content
     },

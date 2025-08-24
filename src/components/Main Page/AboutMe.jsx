@@ -107,17 +107,17 @@ const AboutMe = () => {
         </h2>
         <div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-3 mt-12">
           {/* My Info */}
-          <div data-aos="fade-right" data-aos-delay="300" className="MyInfo p-4 bg-violet-200 shadow-2xl dark:bg-neutral-900 rounded w-full md:w-1/2 text-center md:text-left">
+          <div data-aos="fade-right" data-aos-delay="300" className="MyInfo p-4 bg-violet-50 shadow-md dark:bg-neutral-900 rounded w-full md:w-1/2 text-center md:text-left">
             <h3 className="text-xl text-violet-500 dark:text-violet-400 font-bold mb-5">
               Who I Am
             </h3>
             <h4 className="text-2xl text-violet-950 dark:text-violet-50 font-bold pb-5">
               My name is Sheikh Abdul Basit and I am a full stack developer.
             </h4>
-            <p className="text-violet-500 dark:text-neutral-400 mb-6 leading-8">
+            <p className="text-neutral-900 dark:text-neutral-400 mb-6 leading-8">
               Passionate about creating responsive and dynamic web applications, I continuously refine my existing skills while exploring new technologies to deliver better solutions and maintain best practices.
             </p>
-            <ul className="text-violet-500 dark:text-neutral-400">
+            <ul className="text-neutral-900 dark:text-neutral-400">
               <li className="pb-6">
                 <strong className="text-violet-950 dark:text-violet-50">Age: </strong>{year-2002}
               </li>
@@ -158,7 +158,7 @@ const AboutMe = () => {
           </div>
 
           {/* My Skills */}
-          <div data-aos="fade-left" data-aos-delay="600" className="MyInfo p-4 bg-violet-200 shadow-2xl dark:bg-neutral-900 rounded w-full md:w-1/2 text-center md:text-left">
+          <div data-aos="fade-left" data-aos-delay="600" className="MyInfo p-4 bg-violet-50 shadow-md dark:bg-neutral-900 rounded w-full md:w-1/2 text-center md:text-left">
             <h3 className="text-xl text-violet-500 dark:text-violet-400 font-bold mb-5">
               Skills
             </h3>

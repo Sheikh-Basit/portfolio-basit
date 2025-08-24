@@ -77,7 +77,7 @@ const AboutMePage = () => {
     return (
         <>
             <PageHeader />
-            <div className="container mx-auto px-3 pt-25 lg:px-14">
+            <div className="container mx-auto px-3 pt-25 lg:px-14 overflow-hidden">
                 <div className="aboutme">
 
                     {/* About Me */}
@@ -102,12 +102,12 @@ const AboutMePage = () => {
                                     Download CV
                                 </a>
                             </div>
-                            <p data-aos="fade-right" data-aos-delay="600" className='-z-10 pe-5 leading-8 text-neutral-900 dark:text-violet-200'>
+                            <p data-aos="fade-right" data-aos-delay="600" className='-z-10 sm:pe-5 leading-8 text-neutral-900 dark:text-violet-200 text-center sm:text-left'>
                                 I am a passionate and dedicated developer with a strong foundation in Computer Science, having recently completed my graduation. My journey in the world of development began in 2023 when I started from scratch, learning the basics of HTML, CSS, and JavaScript. With consistent practice and curiosity, I gradually built my skills and moved from creating simple static pages to designing more interactive and dynamic web applications. Along the way, I also worked with WordPress and PHP, which helped me understand content management systems, client requirements, and how to deliver functional websites with efficient workflows.
-                                <br />
+                                <br /><br/>
 
                                 As my interest in modern web technologies grew, I transitioned into the MERN stack, where I have been working for the past 10 months. During this time, I have developed full-featured applications using MongoDB, Express.js, React.js, and Node.js, gaining hands-on experience in building scalable and responsive solutions. My focus lies in writing clean, maintainable code and crafting user-friendly interfaces that enhance the overall digital experience.
-                                <br />
+                                <br /><br/>
 
                                 With every project, I strive to learn, adapt, and grow as a developer. My ultimate goal is to deliver impactful solutions while continuously improving my skills as a full-stack developer.
                             </p>

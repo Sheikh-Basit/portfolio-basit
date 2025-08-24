@@ -8,7 +8,7 @@ const Services = () => {
     return (
         <>
         <PageHeader/>
-        <div className="container mx-auto px-3 pt-25 lg:px-14">
+        <div className="container mx-auto px-3 pt-25 lg:px-14 overflow-hidden">
             {/* Services */}
             <div className="services">
                 <h2 data-aos="fade-up" data-aos-delay="300" className="text-center text-4xl sm:text-5xl text-violet-950 dark:text-violet-50 font-bold">
@@ -39,7 +39,7 @@ const Services = () => {
                 </h2>
                 <div className="grid sm:grid-cols-3 gap-3 items-stretch my-16 dark:text-violet-200">
                     {/* 1 */}
-                    <div data-aos="fade-right" data-aos-delay="500" className='text-center px-5 py-8 bg-violet-200 shadow-xl dark:bg-neutral-900 rounded-md sm:scale-90'>
+                    <div data-aos="fade-right" data-aos-delay="500" className='text-center px-5 py-8 bg-violet-50 shadow-xl dark:bg-neutral-900 rounded-md sm:scale-90'>
                         <h3 className='text-xl text-violet-500 dark:text-violet-400 font-bold mb-4'>BASIC</h3>
                         <h4 className='text-neutral-900 dark:text-violet-50 font-bold text-sm'>Perfect for new businesses</h4>
                         <p className='text-violet-950 dark:text-violet-50 font-bold text-5xl my-5 flex items-start justify-center'><span className='text-2xl '>$</span>10</p>
@@ -71,7 +71,7 @@ const Services = () => {
                     </div>
 
                     {/* 3 */}
-                    <div data-aos="fade-left" data-aos-delay="1000" className='text-center px-5 py-8 bg-violet-200 shadow-xl dark:bg-neutral-900 rounded-md sm:scale-90'>
+                    <div data-aos="fade-left" data-aos-delay="1000" className='text-center px-5 py-8 bg-violet-50 shadow-xl dark:bg-neutral-900 rounded-md sm:scale-90'>
                         <h3 className='text-xl text-violet-500 dark:text-violet-400 font-bold mb-4'>PREMIUM</h3>
                         <h4 className='text-neutral-900 dark:text-violet-50 font-bold text-sm'>Great for large websites</h4>
                         <p className='text-violet-950 dark:text-violet-50 font-bold text-5xl my-5 flex items-start justify-center'><span className='text-2xl '>$</span>150</p>

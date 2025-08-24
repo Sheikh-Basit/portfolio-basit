@@ -12,14 +12,13 @@ const Footer = () => {
   return (
     <footer className="bg-violet-200 dark:bg-neutral-950 dark:text-violet-50 dark:shadow-[0_-4px_10px_rgba(255,255,255,0.03)] text-violet-950 dark:border-0">
       <div className="container mx-auto flex sm:flex-row flex-col space-y-8 sm:space-y-0 justify-between items-center py-8 p-3 lg:px-14">
+        {/* Fotter content */}
         <div className="copyright text-center sm:text-left">
           <p>Page Created by Sheikh Abdul Basit</p>
           <p>&copy; 2025 All Rights Reserved</p>
         </div>
-        <div className="footer-icons flex items-center justify-center gap-x-6 text-2xl me-8">
-          <a href="#" target="_blank">
-            <FaInstagram />
-          </a>
+        {/* Footer Social Icons */}
+        <div className="footer-icons flex items-center justify-center gap-x-6 text-2xl sm:me-8">
           <a
             href="https://www.linkedin.com/in/sheikh-abdul-basit-82b594302/"
             target="_blank"
@@ -28,6 +27,9 @@ const Footer = () => {
           </a>
           <a href="https://github.com/Sheikh-Basit" target="_blank">
             <FaGithub />
+          </a>
+          <a href="https://www.instagram.com/sheikhbasit864?utm_source=qr&igsh=OHpmNmN6aHpmbHRx" target="_blank">
+            <FaInstagram />
           </a>
         </div>
       </div>

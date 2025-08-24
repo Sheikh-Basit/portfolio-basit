@@ -15,7 +15,7 @@ const Services = () => {
                 <div className="grid sm:grid-cols-2 gap-5 items-stretch place-items-center mt-12">
                     {services.map((service, index) => {
                         return (
-                            <div key={index} data-aos="zoom-in" data-aos-delay="600" className="text-center group p-4 bg-white dark:bg-neutral-900 shadow-xl rounded hover:bg-violet-200 dark:hover:bg-neutral-900 dark:border-b-10 dark:hover:border-b-violet-400 dark:border-b-neutral-900 dark:inset-shadow-sm dark:hover:inset-shadow-violet-400">
+                            <div key={index} data-aos="zoom-in" data-aos-delay="600" className="text-center group p-4 bg-violet-50 dark:bg-neutral-900 shadow-md rounded hover:bg-violet-200 dark:hover:bg-neutral-900 dark:border-b-10 dark:hover:border-b-violet-400 dark:border-b-neutral-900 dark:inset-shadow-sm dark:hover:inset-shadow-violet-400">
                                 <service.icon className="inline-block text-violet-950 dark:text-violet-50 text-5xl mb-5 group-hover:text-violet-500" />
                                 <h3 className="text-xl text-violet-500 dark:text-violet-400 group-hover:text-violet-950 dark:group-hover:text-violet-50 font-bold mb-5">
                                     {service.title}

@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 import Services from './Pages/Services/Services';
 import RouterScrollTop from './components/ScrollToTop/RouterScrollTop';
 import AboutMePage from './Pages/AboutMePage';
-import Projects from './Pages/Projects';
+import Projects from './Pages/Projects/Projects';
 
 
 // import ParticlesHeroSecBg from './components/BackgroundParticles/ParticlesHeroSecBg';

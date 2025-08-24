@@ -15,7 +15,7 @@ const HeroSection = () => {
             <ParticlesHeroSecBg/>
           </div>
     
-          <div className="container mx-auto h-full p-3 sm:px-14 pt-50 flex flex-col items-center">
+          <div className="container mx-auto h-full p-3 sm:px-14 pt-50 flex flex-col items-center text-center">
             <p data-aos="fade-up" data-aos-delay="600"  className="text-2xl sm:text-4xl text-white font-bold">Hello, I'am</p>
             <h1 data-aos="fade-up" data-aos-delay="800" className='text-3xl sm:text-5xl text-violet-400 font-bold uppercase my-2'>Sheikh Abdul Basit</h1>
             <p data-aos="fade-up" data-aos-delay="1000" className="text-2xl sm:text-4xl text-white font-bold">Full Stack Developer</p>
