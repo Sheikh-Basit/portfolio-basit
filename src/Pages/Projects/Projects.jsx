@@ -84,7 +84,7 @@ const Projects = () => {
           </div>
             {/* Modal */}
             {SelectedProject !== null && (
-              <ProjectDetailModal title={SelectedProject.title} desc={SelectedProject.desc} img={SelectedProject.img} link={SelectedProject.demo} technology={SelectedProject.techImages} onClose={() => { setSelectedProject(null) }} />
+              <ProjectDetailModal title={SelectedProject.title} desc={SelectedProject.desc} img={SelectedProject.img} link={SelectedProject.demo} repo={SelectedProject.repo} technology={SelectedProject.techImages} onClose={() => { setSelectedProject(null) }} />
             )}
         </div>
       </div>

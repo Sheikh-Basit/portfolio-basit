@@ -74,7 +74,7 @@ const HeroSection = () => {
           </div>
 
           {/* Scroll Down Button */}
-          <Link to="aboutme">
+          <Link to="aboutme" offset={-70}>
           <div className="scroll-down absolute bottom-5 left-1/2 -translate-x-1/2 w-8 h-13 border-2 border-white rounded-4xl cursor-pointer">
           </div>
           </Link>

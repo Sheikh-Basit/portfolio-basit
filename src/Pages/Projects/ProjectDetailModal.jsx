@@ -47,7 +47,7 @@ const ProjectDetailModal = ({ title, desc, img, link, repo, technology, onClose 
                                     alt={tech.name}
                                     className="w-12 h-12 object-contain"
                                 />
-                                <span className="text-sm mt-2 text-gray-700 dark:text-gray-300">
+                                <span className="text-[12px] mt-2 text-gray-700 dark:text-gray-300">
                                     {tech.name}
                                 </span>
                             </div>
@@ -66,7 +66,7 @@ const ProjectDetailModal = ({ title, desc, img, link, repo, technology, onClose 
                         <a
                             href={repo}
                             target="_blank"
-                            className="border-2 border-black dark:border-violet-50 px-3 py-1 rounded text-black dark:text-violet-50 font-bold hover:bg-black dark:hover:bg-violet-50 hover:text-violet-50 hover:dark:text-violet-500 transition-all"
+                            className="border-2 border-black dark:border-violet-50 px-3 py-1 rounded text-black dark:text-violet-50 font-bold hover:bg-black dark:hover:bg-violet-50 hover:text-violet-50 hover:dark:text-violet-500 transition-all cursor-pointer"
                             
                             rel="noopener noreferrer"
                         >
