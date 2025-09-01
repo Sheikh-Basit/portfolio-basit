@@ -78,6 +78,7 @@ const Navbar = () => {
             to="aboutme"
             smooth={true}
             duration={500}
+            offset={-70}
             spy={true}
             activeClass="active-link"
             className="relative text-violet-950 dark:text-violet-400 px-3 hover:bg-violet-300 dark:hover:bg-neutral-900 sm:hover:bg-transparent sm:dark:hover:bg-transparent sm:px-0 py-3 block font-bold sm:font-semibold cursor-pointer sm:before:content-[''] sm:before:absolute sm:before:left-0 sm:before:bottom-0 sm:before:bg-violet-950 sm:dark:before:bg-violet-500 sm:before:w-0 sm:before:h-0.5 sm:before:transition-all sm:before:duration-300 sm:hover:before:w-full"
@@ -90,6 +91,7 @@ const Navbar = () => {
             to="services"
             smooth={true}
             duration={500}
+            offset={-70}
             spy={true}
             activeClass="active-link"
             className="relative text-violet-950 dark:text-violet-400 px-3 hover:bg-violet-300 dark:hover:bg-neutral-900 sm:hover:bg-transparent sm:dark:hover:bg-transparent sm:px-0 py-3 block font-bold sm:font-semibold cursor-pointer sm:before:content-[''] sm:before:absolute sm:before:left-0 sm:before:bottom-0 sm:before:bg-violet-950 sm:dark:before:bg-violet-500 sm:before:w-0 sm:before:h-0.5 sm:before:transition-all sm:before:duration-300 sm:hover:before:w-full"
@@ -102,6 +104,7 @@ const Navbar = () => {
             to="projects"
             smooth={true}
             duration={500}
+            offset={-70}
             spy={true}
             activeClass="active-link"
             className="relative text-violet-950 dark:text-violet-400 px-3 hover:bg-violet-300 dark:hover:bg-neutral-900 sm:hover:bg-transparent sm:dark:hover:bg-transparent sm:px-0 py-3 block font-bold sm:font-semibold cursor-pointer sm:before:content-[''] sm:before:absolute sm:before:left-0 sm:before:bottom-0 sm:before:bg-violet-950 sm:dark:before:bg-violet-500 sm:before:w-0 sm:before:h-0.5 sm:before:transition-all sm:before:duration-300 sm:hover:before:w-full"
@@ -114,7 +117,9 @@ const Navbar = () => {
             to="contactMe"
             smooth={true}
             duration={500}
+            offset={-70}
             spy={true}
+            
             activeClass="active-link"
             className="relative text-violet-950 dark:text-violet-400 px-3 hover:bg-violet-300 dark:hover:bg-neutral-900 sm:hover:bg-transparent sm:dark:hover:bg-transparent sm:px-0 py-3 block font-bold sm:font-semibold cursor-pointer sm:before:content-[''] sm:before:absolute sm:before:left-0 sm:before:bottom-0 sm:before:bg-violet-950 sm:dark:before:bg-violet-500 sm:before:w-0 sm:before:h-0.5 sm:before:transition-all sm:before:duration-300 sm:hover:before:w-full"
           >

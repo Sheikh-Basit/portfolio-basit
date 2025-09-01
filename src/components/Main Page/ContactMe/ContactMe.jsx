@@ -45,7 +45,7 @@ const ContactMe = () => {
     },
   ]
   return (
-    <section id="contactMe">
+    <section id="contactMe" className="min-h-[75vh]">
       <div className="container mx-auto px-3 pt-14 lg:px-14">
         <h2 data-aos="fade-up" data-aos-delay="300" className="text-center text-4xl sm:text-5xl text-violet-950 dark:text-violet-50 font-bold mb-8">
           Contact Me
