@@ -7,18 +7,18 @@ import { SlCloudDownload } from "react-icons/sl";
 import CV from "../assets/CV.pdf";
 
 // Skill Images 
-import html5 from "../assets/html5.svg";
-import css3 from "../assets/css3.svg";
-import bootstrap from "../assets/bootstrap.svg";
-import Tailwindcss from "../assets/Tailwindcss.svg";
-import jquery from "../assets/jquery.svg";
-import javascript from "../assets/javascript.svg";
-import mongodb from "../assets/mongodb.svg";
-import MySQL from "../assets/MySQL.svg";
-import react from "../assets/react.svg";
-import php from "../assets/php.svg";
-import nodejs from "../assets/nodejs.svg";
-import express from "../assets/express.svg";
+import html5 from "../assets/Skills/html5.svg";
+import css3 from "../assets/Skills/css3.svg";
+import bootstrap from "../assets/Skills/bootstrap.svg";
+import Tailwindcss from "../assets/Skills/Tailwindcss.svg";
+import jquery from "../assets/Skills/jquery.svg";
+import javascript from "../assets/Skills/javascript.svg";
+import mongodb from "../assets/Skills/mongodb.svg";
+import MySQL from "../assets/Skills/MySQL.svg";
+import react from "../assets/Skills/react.svg";
+import php from "../assets/Skills/php.svg";
+import nodejs from "../assets/Skills/nodejs.svg";
+import express from "../assets/Skills/express.svg";
 
 
 const AboutMePage = () => {

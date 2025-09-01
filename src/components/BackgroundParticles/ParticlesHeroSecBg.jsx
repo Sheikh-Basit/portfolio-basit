@@ -4,17 +4,18 @@ import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
 
 // images
-import html5 from '../../assets/html5.svg';
-import css3 from '../../assets/css3.svg';
-import javascript from '../../assets/javascript.svg';
-import jquery from '../../assets/jquery.svg';
-import bootstrap from '../../assets/bootstrap.svg';
-import Tailwindcss from '../../assets/Tailwindcss.svg';
-import php from '../../assets/php.svg';
-import mongodb from '../../assets/mongodb.svg';
-import nodejs from '../../assets/nodejs.svg';
-import MySQL from '../../assets/MySQL.svg';
-import react from '../../assets/react.svg';
+import html5 from '../../assets/Skills/html5.svg';
+import css3 from '../../assets/Skills/css3.svg';
+import javascript from '../../assets/Skills/javascript.svg';
+import jquery from '../../assets/Skills/jquery.svg';
+import bootstrap from '../../assets/Skills/bootstrap.svg';
+import Tailwindcss from '../../assets/Skills/Tailwindcss.svg';
+import php from '../../assets/Skills/php.svg';
+import mongodb from '../../assets/Skills/mongodb.svg';
+import nodejs from '../../assets/Skills/nodejs.svg';
+import MySQL from '../../assets/Skills/MySQL.svg';
+import react from '../../assets/Skills/react.svg';
+import redux from '../../assets/Skills/redux.png';
 
 
 const ParticlesHeroSecBg = () => {
@@ -204,6 +205,11 @@ const ParticlesHeroSecBg = () => {
                 },
                 {
                   src: react,
+                  width: 20,
+                  height: 20,
+                },
+                {
+                  src: redux,
                   width: 20,
                   height: 20,
                 },

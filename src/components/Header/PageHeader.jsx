@@ -16,7 +16,7 @@ const PageHeader = () => {
     <header className="bg-violet-200 dark:bg-neutral-950 shadow fixed w-full z-100">
       <div className="container mx-auto flex justify-between items-center p-3 lg:px-14">
         {/* Logo */}
-        <NavLink to="/" className="order-2 sm:order-1 cursor-pointer">
+        <NavLink to="/portfolio-basit" className="order-2 sm:order-1 cursor-pointer">
           <picture className="flex items-center justify-center">
             <span className="text-transparent [-webkit-text-stroke:1px_#2f0d68] dark:[-webkit-text-stroke:1px_#a684ff] font-bold text-4xl me-2">
               &#123;
@@ -61,7 +61,7 @@ const PageHeader = () => {
         >
           {/* Home */}
           <NavLink
-            to="/"
+            to="/portfolio-basit"
             className={({ isActive }) =>
               `relative text-violet-950 dark:text-violet-400 px-3 sm:px-0 py-3 block font-bold sm:font-semibold sm:before:content-[''] sm:before:absolute sm:before:left-0 sm:before:bottom-0 sm:before:bg-violet-950 sm:dark:before:bg-violet-500 sm:before:w-0 sm:before:h-0.5 sm:before:transition-all sm:before:duration-300 sm:hover:before:w-full cursor-pointer hover:bg-violet-300 dark:hover:bg-neutral-900 sm:hover:bg-transparent sm:dark:hover:bg-transparent ${isActive ? "sm:before:w-full" : ""}`
             }

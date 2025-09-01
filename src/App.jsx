@@ -29,7 +29,7 @@ function App() {
     <Router>
     <RouterScrollTop/>
       <Routes>
-        <Route path="/" element={<MainPage/>} />
+        <Route path="/portfolio-basit" element={<MainPage/>} />
         <Route path="/aboutme" element={<AboutMePage/>} />
         <Route path="/services" element={<Services />} />
         <Route path="/projects" element={<Projects />} />

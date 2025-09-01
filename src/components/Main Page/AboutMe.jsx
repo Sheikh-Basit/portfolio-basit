@@ -7,22 +7,26 @@ import {NavLink} from 'react-router-dom'
 import CV from "../../assets/CV.pdf";
 
 // Skill Images 
-import html5 from "../../assets/html5.svg";
-import css3 from "../../assets/css3.svg";
-import bootstrap from "../../assets/bootstrap.svg";
-import Tailwindcss from "../../assets/Tailwindcss.svg";
-import jquery from "../../assets/jquery.svg";
-import javascript from "../../assets/javascript.svg";
-import mongodb from "../../assets/mongodb.svg";
-import MySQL from "../../assets/MySQL.svg";
-import react from "../../assets/react.svg";
-import php from "../../assets/php.svg";
-import nodejs from "../../assets/nodejs.svg";
-import express from "../../assets/express.svg";
-import figma from "../../assets/figma.svg";
-import git from "../../assets/git.svg";
-import photoshop from "../../assets/photoshop.png";
-import vsCode from "../../assets/vsCode.png";
+import html5 from "../../assets/Skills/html5.svg";
+import css3 from "../../assets/Skills/css3.svg";
+import bootstrap from "../../assets/Skills/bootstrap.svg";
+import Tailwindcss from "../../assets/Skills/Tailwindcss.svg";
+import jquery from "../../assets/Skills/jquery.svg";
+import javascript from "../../assets/Skills/javascript.svg";
+import mongodb from "../../assets/Skills/mongodb.svg";
+import MySQL from "../../assets/Skills/MySQL.svg";
+import react from "../../assets/Skills/react.svg";
+import redux from "../../assets/Skills/redux.png";
+import php from "../../assets/Skills/php.svg";
+import nodejs from "../../assets/Skills/nodejs.svg";
+import express from "../../assets/Skills/express.svg";
+
+// Tools
+import figma from "../../assets/Tools/figma.svg";
+import git from "../../assets/Tools/git.svg";
+import photoshop from "../../assets/Tools/photoshop.png";
+import vsCode from "../../assets/Tools/vsCode.png";
+import wordpress from "../../assets/Tools/wordpress.png";
 
 const AboutMe = () => {
   const d = new Date();
@@ -43,6 +47,10 @@ const AboutMe = () => {
     {
       src: react,
       alt: "React",
+    },
+    {
+      src: redux,
+      alt: "Redux",
     },
     {
       src: bootstrap,
@@ -97,6 +105,10 @@ const AboutMe = () => {
     {
       src: vsCode,
       alt: "Vs Code",
+    },
+    {
+      src: wordpress,
+      alt: "WordPress",
     },
   ];
   return (
