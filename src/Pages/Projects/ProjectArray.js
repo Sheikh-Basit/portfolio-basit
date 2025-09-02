@@ -3,7 +3,7 @@
 import img1 from "../../assets/Projects/img1.png";
 import img2 from "../../assets/Projects/img2.png";
 import img3 from "../../assets/Projects/img3.png";
-import img4 from "../../assets/Projects/img4.jpg";
+import img4 from "../../assets/Projects/img4.png";
 
 
 // Skill Images 
@@ -61,16 +61,17 @@ const projects = [
     },
     {
       img: img4,
-      title: "Power Engine",
+      title: "Consultant",
       desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus, reprehenderit expedita! Hic quaerat repellat id delectus autem eveniet officiis aliquid odit sequi quod laborum doloribus suscipit tempore accusantium perferendis, consequuntur sed nihil sit alias dolor.",
-      projectType: "Automobiles Website",
-      tech: "HTML5 - CSS - JavaScript",
-      demo: "https://nahuel61920.github.io/Power-Engine/",
-      repo: "https://github.com/Nahuel61920/Power-Engine",
+      projectType: "HTML Template",
+      tech: "HTML5 - CSS - JavaScript -Bootstrap",
+      demo: "https://sheikh-basit.github.io/Consultancy-Website-Template/",
+      repo: "https://github.com/Sheikh-Basit/Consultancy-Website-Template",
       techImages: [
         { name: "HTML", img: html5, },
         { name: "CSS", img: css3, },
         { name: "JavaScript", img: javascript },
+        { name: "Bootstrap", img: bootstrap },
       ]
     },
     // Delete this when add more project
