@@ -20,6 +20,8 @@ import php from "../assets/Skills/php.svg";
 import nodejs from "../assets/Skills/nodejs.svg";
 import express from "../assets/Skills/express.svg";
 
+import EducationAndExperince from '../components/Main Page/Education & Experience/EducationAndExperience';
+
 
 const AboutMePage = () => {
     const skills = [
@@ -77,7 +79,7 @@ const AboutMePage = () => {
     return (
         <>
             <PageHeader />
-            <div className="container mx-auto px-3 pt-25 lg:px-14 overflow-hidden">
+            <div className="container mx-auto px-3 pt-25 lg:px-14 overflow-hidden pb-12">
                 <div className="aboutme">
 
                     {/* About Me */}
@@ -104,10 +106,10 @@ const AboutMePage = () => {
                             </div>
                             <p data-aos="fade-right" data-aos-delay="600" className='-z-10 sm:pe-5 leading-8 text-neutral-900 dark:text-violet-200 text-center sm:text-left'>
                                 I am a passionate and dedicated developer with a strong foundation in Computer Science, having recently completed my graduation. My journey in the world of development began in 2023 when I started from scratch, learning the basics of HTML, CSS, and JavaScript. With consistent practice and curiosity, I gradually built my skills and moved from creating simple static pages to designing more interactive and dynamic web applications. Along the way, I also worked with WordPress and PHP, which helped me understand content management systems, client requirements, and how to deliver functional websites with efficient workflows.
-                                <br /><br/>
+                                <br /><br />
 
                                 As my interest in modern web technologies grew, I transitioned into the MERN stack, where I have been working for the past 10 months. During this time, I have developed full-featured applications using MongoDB, Express.js, React.js, and Node.js, gaining hands-on experience in building scalable and responsive solutions. My focus lies in writing clean, maintainable code and crafting user-friendly interfaces that enhance the overall digital experience.
-                                <br /><br/>
+                                <br /><br />
 
                                 With every project, I strive to learn, adapt, and grow as a developer. My ultimate goal is to deliver impactful solutions while continuously improving my skills as a full-stack developer.
                             </p>
@@ -115,33 +117,35 @@ const AboutMePage = () => {
                         </div>
                     </div>
 
-
-
-                    {/* Skills */}
-                    <div className="skills">
-                        <h2 data-aos="fade-up" data-aos-delay="300" className="text-center text-4xl sm:text-5xl text-violet-950 dark:text-violet-50 font-bold">
-                            Skills
-                        </h2>
-
-                        <div className="front-end-social-icons grid grid-cols-4 md:grid-cols-3 gap-5 place-items-center my-5">
-                            {skills.map((item, index) => {
-                                return (
-                                    <div data-aos="zoom-in" data-aos-delay="300" key={index} className="relative group w-max">
-                                        <img
-                                            src={item.src}
-                                            alt={item.alt}
-                                            className="w-14 sm:w-20 grayscale-0 dark:hover:grayscale-0 dark:grayscale-100 m-3"
-                                        />
-                                        <div className="absolute bottom-full left-1/2 mb-2 w-max -translate-x-1/2 translate-y-15 opacity-0 group-hover:opacity-100 group-hover:translate-y-3  transition-all duration-500 bg-violet-500 dark:bg-violet-50 text-violet-50 dark:text-violet-500 text-sm px-3 py-1 rounded shadow-lg z-10 font-semibold">
-                                            {item.alt}
-                                        </div>
-                                    </div>
-                                );
-                            })}
-                        </div>
-                    </div>
-
                 </div>
+                {/* Skills */}
+                <div className="skills">
+                    <h2 data-aos="fade-up" data-aos-delay="300" className="text-center text-4xl sm:text-5xl text-violet-950 dark:text-violet-50 font-bold mb-5">
+                        Skills
+                    </h2>
+
+                    <div className="front-end-social-icons grid grid-cols-4 md:grid-cols-3 gap-5 place-items-center">
+                        {skills.map((item, index) => {
+                            return (
+                                <div data-aos="zoom-in" data-aos-delay="300" key={index} className="relative group w-max">
+                                    <img
+                                        src={item.src}
+                                        alt={item.alt}
+                                        className="w-14 sm:w-20 grayscale-0 dark:hover:grayscale-0 dark:grayscale-100 m-3"
+                                    />
+                                    <div className="absolute bottom-full left-1/2 mb-2 w-max -translate-x-1/2 translate-y-15 opacity-0 group-hover:opacity-100 group-hover:translate-y-3  transition-all duration-500 bg-violet-500 dark:bg-violet-50 text-violet-50 dark:text-violet-500 text-sm px-3 py-1 rounded shadow-lg z-10 font-semibold">
+                                        {item.alt}
+                                    </div>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+
+
+
+                <EducationAndExperince/>
+
 
 
 
