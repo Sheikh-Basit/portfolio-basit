@@ -8,8 +8,6 @@ const ThemeChange = () => {
   // toggle theme
 const ToggleThemeChange = () => {
   const newTheme = isLightDark ? "dark" : "light";
-  console.log(newTheme)
-  console.log(isLightDark)
   setIsLightDark(!isLightDark);
 
   document.body.className = newTheme; // apply theme
