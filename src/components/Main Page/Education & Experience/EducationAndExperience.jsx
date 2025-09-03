@@ -26,7 +26,7 @@ const EducationAndExperince = () => {
                 Education & Experience
             </h2>
 
-            <div className="grid grid-cols-2 gap-10 mt-8">
+            <div className="grid sm:grid-cols-2 grid-cols-1 gap-10 mt-8">
                 {/* Education */}
                 <div className="education">
                     {/* Heading */}
