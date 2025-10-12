@@ -59,7 +59,7 @@ const Projects = () => {
                         {/* Action Buttons */}
                         <div className="flex items-center justify-center gap-x-2">
                           <a
-                            href="https://simpleeportfolio.netlify.app/"
+                            href={project.demo}
                             className="bg-violet-500 font-bold border-2 border-violet-500 text-violet-50 rounded px-3 py-1 transition delay-75 duration-700 -translate-x-28 opacity-0 group-hover:translate-x-0 group-hover:opacity-100"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -67,7 +67,7 @@ const Projects = () => {
                             <span>Demo</span>
                           </a>
                           <a
-                            href="https://github.com/Sheikh-Basit/Digital-Resume-main"
+                            href={project.repo}
                             className="border-2 border-violet-50 px-3 py-1 rounded text-violet-50 font-bold hover:bg-violet-50 hover:text-violet-500 transition-all delay-75 duration-700 translate-x-28 opacity-0 group-hover:translate-x-0 group-hover:opacity-100"
                             target="_blank"
                             rel="noopener noreferrer"
