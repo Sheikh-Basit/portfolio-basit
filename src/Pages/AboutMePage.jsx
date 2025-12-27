@@ -9,16 +9,19 @@ import CV from "../assets/CV.pdf";
 // Skill Images 
 import html5 from "../assets/Skills/html5.svg";
 import css3 from "../assets/Skills/css3.svg";
+import javascript from "../assets/Skills/javascript.svg";
+import typescript from "../assets/Skills/typescript.svg";
+import react from "../assets/Skills/react.svg";
+import redux from "../assets/Skills/redux.png";
 import bootstrap from "../assets/Skills/bootstrap.svg";
 import Tailwindcss from "../assets/Skills/Tailwindcss.svg";
 import jquery from "../assets/Skills/jquery.svg";
-import javascript from "../assets/Skills/javascript.svg";
-import mongodb from "../assets/Skills/mongodb.svg";
-import MySQL from "../assets/Skills/MySQL.svg";
-import react from "../assets/Skills/react.svg";
-import php from "../assets/Skills/php.svg";
 import nodejs from "../assets/Skills/nodejs.svg";
+import mongodb from "../assets/Skills/mongodb.svg";
 import express from "../assets/Skills/express.svg";
+import MySQL from "../assets/Skills/MySQL.svg";
+import php from "../assets/Skills/php.svg";
+import wordpress from "../assets/Tools/wordpress.png";
 
 import EducationAndExperince from '../components/Main Page/Education & Experience/EducationAndExperience';
 
@@ -38,8 +41,16 @@ const AboutMePage = () => {
             alt: "JavaScript",
         },
         {
+            src: typescript,
+            alt: "TypeScript",
+        },
+        {
             src: react,
-            alt: "React Js",
+            alt: "React",
+        },
+        {
+            src: redux,
+            alt: "Redux",
         },
         {
             src: bootstrap,
@@ -72,6 +83,10 @@ const AboutMePage = () => {
         {
             src: php,
             alt: "PHP",
+        },
+        {
+            src: wordpress,
+            alt: "WordPress",
         },
     ];
 

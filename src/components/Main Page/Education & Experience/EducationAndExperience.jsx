@@ -42,9 +42,9 @@ const EducationAndExperince = () => {
                                 {/* Year + Line */}
                                 <div data-aos="zoom-in" data-aos-delay="500" className="flex relative pl-20">
                                     {/* Starting Year */}
-                                    <span className="absolute -top-4 right-0 mr-3 text-sm text-neutral-900 dark:text-violet-50">{edu.startDate}</span>
+                                    <span className="absolute -bottom-4 right-0 mr-3 text-sm text-neutral-900 dark:text-violet-50">{edu.startDate}</span>
                                     {/* Ending Year */}
-                                    <span className="absolute -bottom-4 right-0 mr-3 text-sm text-neutral-900 dark:text-violet-50">{edu.endDate}</span>
+                                    <span className="absolute -top-4 right-0 mr-3 text-sm text-neutral-900 dark:text-violet-50">{edu.endDate}</span>
                                     {/* Line */}
                                     <span className="line relative h-full w-0.5 bg-violet-500 before:absolute before:-top-3 before:-left-1.5 before:w-3 before:h-3 before:rounded-full before:bg-violet-500 before:ml-[1px] after:absolute after:-bottom-3 after:-left-1.5 after:w-3 after:h-3 after:rounded-full after:bg-violet-500 after:ml-[1px]"></span>
                                 </div>
@@ -76,9 +76,9 @@ const EducationAndExperince = () => {
                                 {/* Year + Line */}
                                 <div data-aos="zoom-in" data-aos-delay="500" className="flex relative pl-20">
                                     {/* Starting Date */}
-                                    <span className="absolute -top-4 right-0 mr-3 text-sm text-neutral-900 dark:text-violet-50">{exp.startDate}</span>
+                                    <span className="absolute -bottom-4 right-0 mr-3 text-sm text-neutral-900 dark:text-violet-50">{exp.startDate}</span>
                                     {/* Ending Date */}
-                                    <span className="absolute -bottom-4 right-0 mr-3 text-sm text-neutral-900 dark:text-violet-50">{exp.endDate}</span>
+                                    <span className="absolute -top-4 right-0 mr-3 text-sm text-neutral-900 dark:text-violet-50">{exp.endDate}</span>
                                     {/* Line */}
                                     <span className="line relative h-full w-0.5 bg-violet-500 before:absolute before:-top-3 before:-left-1.5 before:w-3 before:h-3 before:rounded-full before:bg-violet-500 before:ml-[1px] after:absolute after:-bottom-3 after:-left-1.5 after:w-3 after:h-3 after:rounded-full after:bg-violet-500 after:ml-[1px]"></span>
                                 </div>

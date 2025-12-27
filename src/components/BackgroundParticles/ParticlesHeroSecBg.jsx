@@ -7,6 +7,7 @@ import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSli
 import html5 from '../../assets/Skills/html5.svg';
 import css3 from '../../assets/Skills/css3.svg';
 import javascript from '../../assets/Skills/javascript.svg';
+import typescript from '../../assets/Skills/typescript.svg';
 import jquery from '../../assets/Skills/jquery.svg';
 import bootstrap from '../../assets/Skills/bootstrap.svg';
 import Tailwindcss from '../../assets/Skills/Tailwindcss.svg';
@@ -165,6 +166,11 @@ const ParticlesHeroSecBg = () => {
                 },
                 {
                   src: javascript,
+                  width: 20,
+                  height: 20,
+                },
+                {
+                  src: typescript,
                   width: 20,
                   height: 20,
                 },
